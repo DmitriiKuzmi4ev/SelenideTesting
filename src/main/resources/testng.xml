@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/d.kuzmichev/IdeaProjects/SelenideTesting/src/test/java">
+        <classes>
+            <class name="UI_Tests.test.FdmLoginAndNavTest">
+                <methods>
+                    <include name="logInTest"/>
+                    <include name="navigationTest"/>
+                    <include name="feedBackFornTest"/>
+                    <include name="fdmLinksTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrFacadePlasticTest">
+                <methods>
+                    <include name="kedrPlasticTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrPlasticSelectsTest">
+                <methods>
+                    <include name="kerdSelectTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrFacadePlasticAndEdgeTest">
+                <methods>
+                    <include name="kedrPlasticAndEdgeTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrFacadePlasticAndEdgeSelectTest">
+                <methods>
+                    <include name="kerdSelectTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

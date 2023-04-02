@@ -7,7 +7,8 @@ import org.testng.annotations.*;
 
 public class ConfigurationForTest {
     public void startWork() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Red1\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Red1\\chromedriver.exe"); //Work ARM
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\drivers\\chromedriver.exe"); //Home ARM
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1920x1080";

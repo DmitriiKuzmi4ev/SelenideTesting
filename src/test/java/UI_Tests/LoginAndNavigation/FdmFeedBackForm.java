@@ -19,10 +19,10 @@ public class FdmFeedBackForm {
 
     public void fdmFeedBackForm() {
 
-        inputName.sendKeys(TEST_NAME);
-        inputNumber.sendKeys(TEST_NUMBER);
-        inputText.sendKeys(TEST_TEXT);
-        submitBtn.click();
+        inputName.shouldBe(Condition.enabled).sendKeys(TEST_NAME);
+        inputNumber.shouldBe(Condition.enabled).sendKeys(TEST_NUMBER);
+        inputText.shouldBe(Condition.enabled).sendKeys(TEST_TEXT);
+        submitBtn.shouldBe(Condition.enabled).click();
 
         $x("/html/body/div[5]/div/div[6]/div/form/div[5]/div[1]")
                 .shouldHave(Condition.exactText("Сообщение отправлено!"));

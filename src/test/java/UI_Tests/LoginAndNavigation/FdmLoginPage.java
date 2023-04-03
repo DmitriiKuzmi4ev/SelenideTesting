@@ -14,7 +14,7 @@ public class FdmLoginPage {
     private static final String BASE_URL = "https://dev.allfdm.ru/";
     private static final String AUTH_CODE = "1111";
 
-    private final SelenideElement title = $x("/html/head/title/text()");
+    private final SelenideElement title = $x("/html/head/title");
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
     private final SelenideElement enterBase = $x("/html/body/header/div/nav/div/div[2]/a[1]");
     private final SelenideElement inputNumber = $x("//*[@id=\"phoneInput\"]");
@@ -30,13 +30,13 @@ public class FdmLoginPage {
         /*Кнопка - Вход (на главной)*/
         enterBase.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         /*Ввод номер телефона (зарегестрированного)*/
-        inputNumber.setValue("9950378814");
+        inputNumber.shouldBe(Condition.enabled).setValue("9950378814");
         /*Кнопка - Войти*/
-        entering.hover().click();
+        entering.shouldBe(Condition.enabled).hover().click();
         /*Ввод 4х значного кода*/
-        codeInput.sendKeys(AUTH_CODE);
+        codeInput.shouldBe(Condition.enabled).sendKeys(AUTH_CODE);
         /*Кнопка - Войти*/
-        mainEnter.hover().click();
+        mainEnter.shouldBe(Condition.enabled).hover().click();
 
     }
 

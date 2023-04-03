@@ -36,13 +36,13 @@ public class FdmNavigation {
         /*Главная*/
         backToMain.click();
         /*Баннер 1 - основной*/
-        banner1.shouldBe(Condition.enabled).click();
+        banner1.shouldBe(Condition.visible).click();
         /*Главная*/
         backToMain.click();
         /*Баннер 2 - образцы в подарок*/
-        banner2.shouldBe(Condition.enabled).click();
+        banner2.shouldBe(Condition.visible).click();
         /*Главная*/
-        backToMain.click();
+        backToMain.shouldBe(Condition.enabled).click();
         /*Скролл страницы*/
         scroll1.scrollTo();
         /*Кнопка перехода в каталог фабрик 2*/

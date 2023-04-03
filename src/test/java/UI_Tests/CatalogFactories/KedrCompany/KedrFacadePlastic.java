@@ -22,10 +22,8 @@ public class KedrFacadePlastic {
     private final SelenideElement heightArea = $x("//input[contains(@class, \"detail-height-input form-control\")]");
     private final SelenideElement widthArea = $x("//input[contains(@class, \"detail-width-input form-control\")]");
     private final SelenideElement calculate = $x("//button[contains(@class, \"btn btn-success mb-4\")]");
-
     private final SelenideElement scroll1 = $x("//a[contains(@data-href, \"/order/add-to-basket/\")]");
     private final SelenideElement scroll2 = $x("//a[contains(@data-type, \"go-to-checkout\")]");
-
     private final SelenideElement addToBasket = $x("//a[contains(@class, \"add-to-basket-js\")]");
     private final SelenideElement goToBasket = $x("//a[contains(@class,  \"in-basket mb-4\")]");
     private final SelenideElement goToCheckOut = $x("//a[contains(@class, \"btn btn-lg btn-success w-100 mb-4\")]");

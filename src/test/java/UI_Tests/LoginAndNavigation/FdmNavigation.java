@@ -15,7 +15,6 @@ public class FdmNavigation {
     private final SelenideElement banner1 = $x("/html/body/div[5]/div/div[1]/div/a");
     private final SelenideElement banner2 = $x("/html/body/div[5]/div/div[1]/div/div/a");
     private final SelenideElement gate2 = $x("/html/body/div[5]/div/div[4]/div/div/a");
-
     private final SelenideElement scroll1 = $x("/html/body/div[5]/div/div[5]/div/div[1]");
     private final SelenideElement scroll2 = $x("/html/body/div[5]/div/div[6]/div/form/div[5]/button");
 

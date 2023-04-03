@@ -23,6 +23,7 @@ public class KedrAluminiumColor {
     private final SelenideElement heightArea = $x("//input[contains(@class, \"detail-height-input form-control\")]");
     private final SelenideElement widthArea = $x("//input[contains(@class, \"detail-width-input form-control\")]");
     private final ElementsCollection edgeCollection = $$x("//div[contains(@class, \"d-flex mb-2 align-items-center edge-decor-item-parent\")]");
+    private final SelenideElement scroll3 = $x("//button[contains(@class, \"btn btn-success mb-4\")]");
     private final SelenideElement calculate = $x("//button[contains(@class, \"btn btn-success mb-4\")]");
     private final SelenideElement scroll1 = $x("//a[contains(@data-href, \"/order/add-to-basket/\")]");
     private final SelenideElement scroll2 = $x("//a[contains(@data-type, \"go-to-checkout\")]");
@@ -57,6 +58,8 @@ public class KedrAluminiumColor {
         SelenideElement element1 = RandomUtils
                 .getRandomElementFromList(edgeCollection.shouldBe(CollectionCondition.sizeNotEqual(0)));
         element1.click();
+        /*Скролл к кнопке - рассчитать*/
+        scroll3.scrollTo();
         /*Рассчитать стоимость заказа*/
         calculate.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         scroll1.scrollTo();

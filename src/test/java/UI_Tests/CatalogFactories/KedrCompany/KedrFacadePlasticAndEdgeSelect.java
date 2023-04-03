@@ -28,21 +28,21 @@ public class KedrFacadePlasticAndEdgeSelect {
         /*Каталог*/
         catalog.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         /*Кедр*/
-        kedr.click();
+        kedr.shouldBe(Condition.enabled).click();
         /*Фасады из пластика*/
         plastic.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         /*Фасады без окромления*/
-        facadeWithEdge.click();
+        facadeWithEdge.shouldBe(Condition.enabled).click();
         /*Выбрать категорию*/
-        select1.click();
+        select1.shouldBe(Condition.enabled).click();
         /*Проверка - первый элемент содержит значение Категория 1*/
         category1.shouldHave(Condition.text("Категория 1"));
         /*Выбрать тип*/
-        select2.click();
+        select2.shouldBe(Condition.enabled).click();
         /*Проверка - первый элемент содержит значение Глянец*/
         gloss.shouldHave(Condition.text("Глянец"));
         /*Выбрать цвет*/
-        select3.click();
+        select3.shouldBe(Condition.enabled).click();
         /*Проверка - элементы активны*/
         color1.shouldHave(Condition.enabled);
     }

@@ -38,7 +38,7 @@ public class KedrFacadePlasticAndEdge {
         /*Каталог*/
         catalog.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         /*Фабрика Кедр*/
-        kedr.click();
+        kedr.shouldBe(Condition.enabled).click();
         /*Фасады из пластика*/
         plastic.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         /*Фасады с кромкой*/
@@ -48,11 +48,11 @@ public class KedrFacadePlasticAndEdge {
                 .shouldBe(CollectionCondition.sizeNotEqual(0)));
         element.click();
         /*Продолжить*/
-        continue1.click();
+        continue1.shouldBe(Condition.enabled).click();
         /*Высота*/
-        heightArea.sendKeys(BASE_HEIGHT);
+        heightArea.shouldBe(Condition.enabled).sendKeys(BASE_HEIGHT);
         /*Ширина*/
-        widthArea.sendKeys(BASE_WIDTH);
+        widthArea.shouldBe(Condition.enabled).sendKeys(BASE_WIDTH);
         /*Скролл страницы*/
         scroll3.scrollTo();
         /*Этап выбора декора кромки*/
@@ -72,9 +72,9 @@ public class KedrFacadePlasticAndEdge {
         /*Перейти к оформлению*/
         goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         /*Выбрать оплату по QR*/
-        qrCode.click();
+        qrCode.shouldBe(Condition.enabled).click();
         /*Подтвердить город доставки*/
-        deliveryCity.click();
+        deliveryCity.shouldBe(Condition.enabled).click();
         /*Кнопка Оплатить - активна*/
         paymentBtn.shouldBe(Condition.enabled);
     }

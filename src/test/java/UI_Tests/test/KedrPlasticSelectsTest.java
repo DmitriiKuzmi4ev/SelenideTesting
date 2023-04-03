@@ -1,7 +1,7 @@
 package UI_Tests.test;
 
 import FrameWork.DriversConfiguration.ConfigurationForTest;
-import UI_Tests.CatalogFactories.KedrCompany.KedrPlasticSelect;
+import UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrPlasticSelect;
 import UI_Tests.LoginAndNavigation.FdmLoginPage;
 import org.testng.annotations.Test;
 

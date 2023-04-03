@@ -49,14 +49,13 @@ public class KedrFacadePlastic {
         SelenideElement element = RandomUtils.getRandomElementFromList(decorCollection.shouldBe(CollectionCondition.sizeNotEqual(0)));
         element.click();
         /*Продолжить*/
-        continue1.click();
+        continue1.shouldBe(Condition.enabled).click();
         /*Высота*/
-        heightArea.sendKeys(BASE_HEIGHT);
+        heightArea.shouldBe(Condition.enabled).sendKeys(BASE_HEIGHT);
         /*Ширина*/
-        widthArea.sendKeys(BASE_WIDTH);
+        widthArea.shouldBe(Condition.enabled).sendKeys(BASE_WIDTH);
         /*Рассчитать стоимость заказа*/
         calculate.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-
         scroll1.scrollTo();
         /*Добавить в корзину*/
         addToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();

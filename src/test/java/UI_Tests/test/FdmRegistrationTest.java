@@ -1,7 +1,6 @@
 package UI_Tests.test;
 
 import FrameWork.DriversConfiguration.ConfigurationForTest;
-import UI_Tests.LoginAndNavigation.FdmLoginPage;
 import UI_Tests.registration.FdmRegistration;
 import org.testng.annotations.Test;
 

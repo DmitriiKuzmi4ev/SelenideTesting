@@ -36,7 +36,7 @@ public class FdmRegistration {
         lastname.shouldBe(Condition.visible).val(LAST_NAME);
         /*Имя*/
         name.shouldBe(Condition.visible).val(VALID_NAME);
-        /*Отчетсов*/
+        /*Отчество*/
         patronymic.shouldBe(Condition.visible).val(PATRONYMIC_VAL);
         /*Номер телефона*/
         userphone.shouldBe(Condition.visible).val(TEST_NUM);

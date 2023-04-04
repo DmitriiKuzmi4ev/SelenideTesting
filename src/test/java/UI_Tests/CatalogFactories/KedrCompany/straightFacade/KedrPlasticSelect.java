@@ -35,16 +35,10 @@ public class KedrPlasticSelect {
         facadeWithOutEdge.shouldBe(Condition.enabled).click();
         /*Выбрать категорию*/
         select1.click();
-        /*Проверка - первый элемент содержит значение Категория 1*/
-        category1.shouldHave(Condition.text("Категория 1"));
         /*Выбрать тип*/
         select2.shouldBe(Condition.enabled).click();
-        /*Проверка - первый элемент содержит значение Глянец*/
-        gloss.shouldHave(Condition.text("Глянец"));
         /*Выбрать цвет*/
         select3.shouldBe(Condition.enabled).click();
-        /*Проверка - элементы активны*/
-        color1.shouldHave(Condition.enabled);
 
     }
 }

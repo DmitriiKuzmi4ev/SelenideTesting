@@ -7,7 +7,8 @@ import java.time.Duration;
 import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class KedrAluminiumSlim {
+public class KedrAluminiumSilver {
+
     private static final String BASE_URL = "https://dev.allfdm.ru/";
     private static final String BASE_HEIGHT = "716";
     private static final String BASE_WIDTH = "497";
@@ -35,9 +36,7 @@ public class KedrAluminiumSlim {
     private final SelenideElement scroll2_2 = $x("//div[(@class=\"card-body text-center\")]");
     private final SelenideElement scroll3 = $x("//a[contains(@class, \"btn btn-lg btn-success w-100 mb-4\")]");
 
-
-
-    public void kedrSlim() {
+    public void kedrSilver() {
         Selenide.open(BASE_URL);
         /*Каталог*/
         catalog.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();

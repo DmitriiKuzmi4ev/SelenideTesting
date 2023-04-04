@@ -13,7 +13,7 @@ public class KedrFacadePlastic {
     private static final String BASE_HEIGHT = "716";
     private static final String BASE_WIDTH = "497";
 
-    private final SelenideElement catalog = $x("/html/body/header/div/nav/ul/li[1]/a");
+    private final SelenideElement catalog = $x("//a[(@class=\"header__link nav__link nav__link--arrow \")]");
     private final SelenideElement kedr = $x("//a[contains(@href, \"/main/factory/select-factory/kedr/\")]");
     private final SelenideElement plastic = $x("/html/body/div[5]/div/div[2]/div/div/nav/a[1]");
     private final SelenideElement facadeWithOutEdge = $x("/html/body/div[5]/div/div[2]/div[2]/div/div[1]/div/div[1]/a/span");

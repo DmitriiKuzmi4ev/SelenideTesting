@@ -6,6 +6,9 @@ import org.testng.annotations.*;
 
 
 public class ConfigurationForTest {
+
+    private static final String BASE_URL = "https://dev.allfdm.ru/";
+
     public void startWork() {
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Red1\\chromedriver.exe"); //Work ARM
 //        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\drivers\\chromedriver.exe"); //Home ARM
@@ -18,6 +21,7 @@ public class ConfigurationForTest {
         Configuration.pollingInterval = 500;
         Configuration.fastSetValue = true;
         Configuration.screenshots = false;
+        Selenide.open(BASE_URL);
     }
 
     @BeforeClass

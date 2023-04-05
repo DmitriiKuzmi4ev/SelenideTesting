@@ -16,12 +16,17 @@ public class FdmLoginPage {
 
     private final SelenideElement title = $x("/html/head/title");
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
-    private final SelenideElement enterBase = $x("/html/body/header/div/nav/div/div[2]/a[1]");
+    private final SelenideElement enterBase = $x("//a[(@data-link=\"/personal/login_modal\")]");
     private final SelenideElement inputNumber = $x("//*[@id=\"phoneInput\"]");
     private final SelenideElement entering = $x("//*[@id=\"loginForm\"]/div[2]/button");
     private final SelenideElement codeInput = $x("//*[@id=\"codeInput\"]");
     private final SelenideElement mainEnter = $x("//*[@id=\"auth-modal\"]/div/div/div/form[1]/div[2]/button");
+    private final SelenideElement orders = $x("//a[(@href=\"/orders\")]");
 
+
+    public String getVariable() {
+        return enterBase.getText();
+    }
 
     public void fdmLogIn() {
         Selenide.open(BASE_URL);
@@ -39,6 +44,11 @@ public class FdmLoginPage {
         mainEnter.shouldBe(Condition.enabled).hover().click();
 
     }
+
+
+
+
+
 
 }
 

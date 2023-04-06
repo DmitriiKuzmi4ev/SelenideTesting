@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew">
+        <classes>
+            <class name="UI_Tests.test.KedrCompany.KedrAluminiumSilverTest">
+                <methods>
+                    <include name="kedrPlasticTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrCompany.KedrAluminiumSlimTest">
+                <methods>
+                    <include name="kedrPlasticTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest">
+                <methods>
+                    <include name="kedrPlasticTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeSelectTest">
+                <methods>
+                    <include name="kerdSelectTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest">
+                <methods>
+                    <include name="kedrPlasticAndEdgeTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticTest">
+                <methods>
+                    <include name="kedrPlasticTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.KedrCompany.KedrPlasticSelectsTest">
+                <methods>
+                    <include name="kerdSelectTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest">
+                <methods>
+                    <include name="logInTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmLinksTest">
+                <methods>
+                    <include name="logInTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmLoginTest">
+                <methods>
+                    <include name="logInTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest">
+                <methods>
+                    <include name="logInTest"/>
+                </methods>
+            </class>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest">
+                <methods>
+                    <include name="logInTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -10,7 +10,13 @@ public class KedrFacadePlasticAndEdgeSelectTest extends ConfigurationForTest {
     @Test(testName = "Тест - Кедр - работа выпадающих селектов в фасадах из пластика с кромкой", priority = 1)
     public void kerdSelectTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
-        fdmLoginPage.fdmLogIn();
+        fdmLoginPage.applyCity();
+        fdmLoginPage.clickEnter();
+        fdmLoginPage.insertNumber();
+        fdmLoginPage.clickEntering();
+        fdmLoginPage.insertCode();
+        fdmLoginPage.clickMainEnter();
+
         KedrFacadePlasticAndEdgeSelect kedrFacadePlasticWithEdgeSelect = new KedrFacadePlasticAndEdgeSelect();
         kedrFacadePlasticWithEdgeSelect.kedrSelect1();
     }

@@ -10,11 +10,6 @@ import org.testng.annotations.Test;
 
 public class FdmLoginAndNavTest extends ConfigurationForTest {
 
-    @Test(testName = "Тест - авторизация пользователя", priority = 1)
-    public void logInTest() {
-        FdmLoginPage fdmLoginPage = new FdmLoginPage();
-        fdmLoginPage.fdmLogIn();
-    }
     @Test(testName = "Тест - навигация по сайту", priority = 2)
     public void navigationTest() {
         FdmNavigation fdmNavigation = new FdmNavigation();

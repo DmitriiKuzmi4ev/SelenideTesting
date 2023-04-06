@@ -1,14 +1,13 @@
 package UI_Tests.test;
 
 import FrameWork.DriversConfiguration.ConfigurationForTest;
-import UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlastic;
 import UI_Tests.LoginAndNavigation.FdmLoginPage;
 import org.testng.annotations.Test;
 
-public class KedrFacadePlasticTest extends ConfigurationForTest {
+public class FdmLoginTest extends ConfigurationForTest {
 
-    @Test(testName = "Тест - Кедр - заказ фасада из пластика без окромления", priority = 1)
-    public void kedrPlasticTest() {
+    @Test(testName = "Тест - авторизация пользователя", priority = 1)
+    public void logInTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
         fdmLoginPage.clickEnter();
@@ -17,7 +16,5 @@ public class KedrFacadePlasticTest extends ConfigurationForTest {
         fdmLoginPage.insertCode();
         fdmLoginPage.clickMainEnter();
 
-        KedrFacadePlastic kedrFacadePlastic = new KedrFacadePlastic();
-        kedrFacadePlastic.kedrPlastic();
     }
 }

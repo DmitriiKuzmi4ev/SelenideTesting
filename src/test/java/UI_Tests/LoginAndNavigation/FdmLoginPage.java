@@ -1,13 +1,11 @@
 package UI_Tests.LoginAndNavigation;
 
-import com.codeborne.selenide.*;
-import org.testng.Assert;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 
 import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$x;
-import static com.codeborne.selenide.Selenide.title;
-import static com.codeborne.selenide.Selenide.*;
 
 public class FdmLoginPage {
 
@@ -23,29 +21,43 @@ public class FdmLoginPage {
     private final SelenideElement mainEnter = $x("//*[@id=\"auth-modal\"]/div/div/div/form[1]/div[2]/button");
     private final SelenideElement orders = $x("//a[(@href=\"/orders\")]");
 
-
-    public void fdmLogIn() {
-        Selenide.open(BASE_URL);
-        /*Город выбран верно*/
+    /*Город выбран верно*/
+    public void applyCity() {
         applyCity.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Кнопка - Вход (на главной)*/
-        enterBase.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Ввод номер телефона (зарегестрированного)*/
-        inputNumber.shouldBe(Condition.enabled).setValue("9950378814");
-        /*Кнопка - Войти*/
-        entering.shouldBe(Condition.enabled).hover().click();
-        /*Ввод 4х значного кода*/
-        codeInput.shouldBe(Condition.enabled).sendKeys(AUTH_CODE);
-        /*Кнопка - Войти*/
-        mainEnter.shouldBe(Condition.enabled).hover().click();
-
     }
 
+    /*Кнопка - Вход (на главной)*/
+    public void clickEnter() {
+        enterBase.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+    }
 
+    /*Ввод номер телефона (зарегестрированного)*/
+    public void insertNumber() {
+        inputNumber.shouldBe(Condition.enabled).setValue("9950378814");
+    }
 
+    /*Кнопка - Войти*/
+    public void clickEntering() {
+        entering.shouldBe(Condition.enabled).hover().click();
+    }
 
+    /*Ввод 4х значного кода*/
+    public void insertCode() {
+        codeInput.shouldBe(Condition.enabled).sendKeys(AUTH_CODE);
+    }
 
+    /*Кнопка - Войти*/
+    public void clickMainEnter() {
+        mainEnter.shouldBe(Condition.enabled).hover().click();
+    }
 
 }
+
+
+
+
+
+
+
 
 

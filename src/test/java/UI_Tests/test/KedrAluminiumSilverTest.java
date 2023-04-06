@@ -11,7 +11,13 @@ public class KedrAluminiumSilverTest extends ConfigurationForTest {
     @Test(testName = "Тест - Кедр - заказ Фасады алюминиевый профиль - silver", priority = 1)
     public void kedrPlasticTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
-        fdmLoginPage.fdmLogIn();
+        fdmLoginPage.applyCity();
+        fdmLoginPage.clickEnter();
+        fdmLoginPage.insertNumber();
+        fdmLoginPage.clickEntering();
+        fdmLoginPage.insertCode();
+        fdmLoginPage.clickMainEnter();
+
         KedrAluminiumSilver kedrAluminiumSilver = new KedrAluminiumSilver();
         kedrAluminiumSilver.kedrSilver();
     }

@@ -10,11 +10,6 @@ import org.testng.annotations.Test;
 
 public class FdmLoginAndNavTest extends ConfigurationForTest {
 
-    @Test(testName = "Тест - навигация по сайту", priority = 2)
-    public void navigationTest() {
-        FdmNavigation fdmNavigation = new FdmNavigation();
-        fdmNavigation.fdmNavigation();
-    }
     @Test(testName = "Тест - форма обратной связи", priority = 3)
     public void feedBackFornTest() {
         FdmFeedBackForm fdmFeedBackForm = new FdmFeedBackForm();

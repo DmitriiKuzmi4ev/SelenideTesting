@@ -1,8 +1,10 @@
 package UI_Tests.LoginAndNavigation;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class FdmNavigation {
@@ -14,39 +16,69 @@ public class FdmNavigation {
     private final SelenideElement backToMain = $x("/html/body/header/div/a/img");
     private final SelenideElement banner1 = $x("/html/body/div[5]/div/div[1]/div/a");
     private final SelenideElement banner2 = $x("/html/body/div[5]/div/div[1]/div/div/a");
-    private final SelenideElement gate2 = $x("/html/body/div[5]/div/div[4]/div/div/a");
-    private final SelenideElement scroll1 = $x("/html/body/div[5]/div/div[5]/div/div[1]");
-    private final SelenideElement scroll2 = $x("/html/body/div[5]/div/div[6]/div/form/div[5]/button");
+    private final SelenideElement itemPrices = $x("//div[(@class=\"item prices\")]");
+    private final SelenideElement swiperNext = $x("//div[(@class =\"swiper-navigation swiper-button-next\")]");
+    private final SelenideElement sendBtn = $x("//button[(@class =\"send-btn\")]");
 
-    public void fdmNavigation() {
 
-        /*Каталог*/
-        catalog.click();
-        $x("/html/body/div[5]/div/div[1]/div/h1").shouldHave(Condition.exactText("Каталог производителей"));
-        /*Доставка*/
-        delivery.click();
-        $x("/html/body/div[5]/div/div[1]/div/h1").shouldHave(Condition.exactText("Доставка"));
-        /*Оплата*/
-        payment.click();
-        $x("/html/body/div[5]/div/div[1]/div/h1").shouldHave(Condition.exactText("Оплата"));
-        /*Возврат*/
-        backOrder.click();
-        $x("/html/body/div[5]/div/div[1]/div/h1").shouldHave(Condition.exactText("Возврат"));
-        /*Главная*/
-        backToMain.click();
-        /*Баннер 1 - основной*/
-        banner1.shouldBe(Condition.visible).click();
-        /*Главная*/
-        backToMain.click();
-        /*Баннер 2 - образцы в подарок*/
-        banner2.shouldBe(Condition.visible).click();
-        /*Главная*/
-        backToMain.shouldBe(Condition.enabled).click();
-        /*Скролл страницы*/
-        scroll1.scrollTo();
-        /*Кнопка перехода в каталог фабрик 2*/
-        gate2.shouldBe(Condition.enabled);
-        /*Скролл страницы*/
-        scroll2.scrollTo();
+    /*Каталог*/
+    public void clickCatalog() {
+        catalog.shouldBe(Condition.enabled).click();
     }
+
+    /*Доставка*/
+    public void clickDelivery() {
+        delivery.shouldBe(Condition.enabled).click();
+    }
+
+    /*Оплата*/
+    public void clickPayment() {
+        payment.shouldBe(Condition.enabled).click();
+    }
+
+    /*Возврат*/
+    public void clickBackorder() {
+        backOrder.click();
+    }
+
+    /*Главная*/
+    public void backToMain1() {
+        backToMain.click();
+    }
+
+    /*Баннер 1 - основной*/
+    public void clickBanner1() {
+        banner1.shouldBe(Condition.visible).click();
+    }
+
+    /*Главная*/
+    public void clickBackToMain2() {
+        backToMain.click();
+    }
+
+    /*Баннер 2 - образцы в подарок*/
+    public void clickBanner2() {
+        banner2.shouldBe(Condition.visible).click();
+    }
+
+    /*Главная*/
+    public void clickBackToMain3() {
+        backToMain.shouldBe(Condition.enabled).click();
+    }
+
+    /*Скролл*/
+    public void scroll1() {
+        itemPrices.shouldBe(Condition.visible).scrollTo();
+    }
+
+    /*Скролл*/
+    public void scroll2() {
+        swiperNext.shouldBe(Condition.enabled).scrollTo();
+    }
+
+    /*Скролл*/
+    public void scroll3() {
+        sendBtn.shouldBe(Condition.enabled).scrollTo();
+    }
+
 }

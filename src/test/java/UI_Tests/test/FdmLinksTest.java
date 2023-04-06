@@ -19,7 +19,13 @@ public class FdmLinksTest extends ConfigurationForTest {
         fdmLoginPage.clickMainEnter();
 
         FdmLinks fdmLinks = new FdmLinks();
-
+        fdmLinks.scrollToLinks();
+        fdmLinks.checkedPaymentsLink();
+        fdmLinks.checkedAboutLink();
+        fdmLinks.checkedPersonalDataLink();
+        fdmLinks.checkedConfPolitLink();
+        fdmLinks.checkedPublicOfertUrLink();
+        fdmLinks.checkedPublicOfertPhLink();
 
     }
 }

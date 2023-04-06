@@ -11,22 +11,22 @@
                     <include name="fdmLinksTest"/>
                 </methods>
             </class>
-            <class name="UI_Tests.test.KedrFacadePlasticTest">
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticTest">
                 <methods>
                     <include name="kedrPlasticTest"/>
                 </methods>
             </class>
-            <class name="UI_Tests.test.KedrPlasticSelectsTest">
+            <class name="UI_Tests.test.KedrCompany.KedrPlasticSelectsTest">
                 <methods>
                     <include name="kerdSelectTest"/>
                 </methods>
             </class>
-            <class name="UI_Tests.test.KedrFacadePlasticAndEdgeTest">
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest">
                 <methods>
                     <include name="kedrPlasticAndEdgeTest"/>
                 </methods>
             </class>
-            <class name="UI_Tests.test.KedrFacadePlasticAndEdgeSelectTest">
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeSelectTest">
                 <methods>
                     <include name="kerdSelectTest"/>
                 </methods>

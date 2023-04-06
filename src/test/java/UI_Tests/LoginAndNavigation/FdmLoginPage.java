@@ -24,10 +24,6 @@ public class FdmLoginPage {
     private final SelenideElement orders = $x("//a[(@href=\"/orders\")]");
 
 
-    public String getVariable() {
-        return enterBase.getText();
-    }
-
     public void fdmLogIn() {
         Selenide.open(BASE_URL);
         /*Город выбран верно*/

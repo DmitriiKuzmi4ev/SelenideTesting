@@ -1,4 +1,4 @@
-package UI_Tests.test;
+package UI_Tests.test.KedrCompany;
 
 import FrameWork.DriversConfiguration.ConfigurationForTest;
 import UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrPlasticSelect;

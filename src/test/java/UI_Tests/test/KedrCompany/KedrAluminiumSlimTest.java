@@ -1,14 +1,13 @@
-package UI_Tests.test;
+package UI_Tests.test.KedrCompany;
 
 import FrameWork.DriversConfiguration.ConfigurationForTest;
-import UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrAluminiumSilver;
 import UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrAluminiumSlim;
 import UI_Tests.LoginAndNavigation.FdmLoginPage;
 import org.testng.annotations.Test;
 
-public class KedrAluminiumSilverTest extends ConfigurationForTest {
+public class KedrAluminiumSlimTest extends ConfigurationForTest {
 
-    @Test(testName = "Тест - Кедр - заказ Фасады алюминиевый профиль - silver", priority = 1)
+    @Test(testName = "Тест - Кедр - заказ Фасады алюминиевый профиль - slim", priority = 1)
     public void kedrPlasticTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
@@ -18,7 +17,7 @@ public class KedrAluminiumSilverTest extends ConfigurationForTest {
         fdmLoginPage.insertCode();
         fdmLoginPage.clickMainEnter();
 
-        KedrAluminiumSilver kedrAluminiumSilver = new KedrAluminiumSilver();
-        kedrAluminiumSilver.kedrSilver();
+        KedrAluminiumSlim kedrAluminiumSlim = new KedrAluminiumSlim();
+        kedrAluminiumSlim.kedrSlim();
     }
 }

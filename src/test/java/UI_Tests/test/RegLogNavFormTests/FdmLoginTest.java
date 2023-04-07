@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class FdmLoginTest extends ConfigurationForTest {
 
-    @Test(testName = "Тест - авторизация пользователя", priority = 1)
+    @Test(testName = "Тест - Проверка авторизации пользователя", priority = 1)
     public void logInTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();

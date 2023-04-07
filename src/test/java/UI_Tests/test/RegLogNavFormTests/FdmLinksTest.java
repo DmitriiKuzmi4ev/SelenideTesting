@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class FdmLinksTest extends ConfigurationForTest {
 
-    @Test(testName = "Тест - проверка ссылок на главной странице", priority = 1)
+    @Test(testName = "Тест - Проверка ссылок на главной странице", priority = 1)
     public void logInTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();

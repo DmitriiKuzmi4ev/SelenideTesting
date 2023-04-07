@@ -18,6 +18,12 @@ public class KedrFacadePlasticAndEdgeSelectTest extends ConfigurationForTest {
         fdmLoginPage.clickMainEnter();
 
         KedrFacadePlasticAndEdgeSelect kedrFacadePlasticWithEdgeSelect = new KedrFacadePlasticAndEdgeSelect();
-        kedrFacadePlasticWithEdgeSelect.kedrSelect1();
+        kedrFacadePlasticWithEdgeSelect.catalogClick();
+        kedrFacadePlasticWithEdgeSelect.kedrClick();
+        kedrFacadePlasticWithEdgeSelect.plasticClick();
+        kedrFacadePlasticWithEdgeSelect.facadeWithEdgeClick();
+        kedrFacadePlasticWithEdgeSelect.categorySelectClick();
+        kedrFacadePlasticWithEdgeSelect.typeSelectClick();
+        kedrFacadePlasticWithEdgeSelect.colorSelectClick();
     }
 }

@@ -9,7 +9,7 @@ public class FdmFeedBackFormTest extends ConfigurationForTest {
 
 
     @Test(testName = "Тест - Проверка формы обратной связи", priority = 1)
-    public void logInTest() {
+    public void fdmFeedBackFormTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
         fdmLoginPage.clickEnter();

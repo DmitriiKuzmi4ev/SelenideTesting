@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class FdmRegistrationTest extends ConfigurationForTest {
 
     @Test(testName = "Тест - Проверка формы регистрации пользователя", priority = 1)
-    public void logInTest() {
+    public void fdmRegistrationTest() {
         FdmRegistration fdmRegistration = new FdmRegistration();
         fdmRegistration.applyCity();
         fdmRegistration.registrationClick();

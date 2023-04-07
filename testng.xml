@@ -40,27 +40,27 @@
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest">
                 <methods>
-                    <include name="Тест - проверка формы обратной связи"/>
+                    <include name="FdmFeedBackFormTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmLinksTest">
                 <methods>
-                    <include name="Тест - проверка ссылок на главной странице сайта"/>
+                    <include name="FdmLinksTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmLoginTest">
                 <methods>
-                    <include name="Тест - проверка авторизации пользователя"/>
+                    <include name="FdmLoginTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest">
                 <methods>
-                    <include name="Тест - проверка навигации на сайте"/>
+                    <include name="FdmNavigationTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest">
                 <methods>
-                    <include name="Тест - проверка формы регистрации пользователя"/>
+                    <include name="FdmRegistrationTest"/>
                 </methods>
             </class>
         </classes>

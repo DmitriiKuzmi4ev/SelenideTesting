@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class FdmNavigationTest extends ConfigurationForTest {
     @Test(testName = "Тест - Проверка навигации на сайте", priority = 1)
-    public void logInTest() {
+    public void fdmNavigationTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
         fdmLoginPage.clickEnter();

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" [
+        <!ENTITY reportng_css SYSTEM "src/main/resources/reportng.css">
+        ]>
+
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
     <test verbose="2" preserve-order="true" name="C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew">
         <classes>
             <class name="UI_Tests.test.KedrCompany.KedrAluminiumSilverTest">

@@ -14,7 +14,7 @@ public class KedrFacadePlastic {
 
     private final SelenideElement catalog = $x("//a[(@class=\"header__link nav__link nav__link--arrow \")]");
     private final SelenideElement kedr = $x("//a[contains(@href, \"/main/factory/select-factory/kedr/\")]");
-    private final SelenideElement plastic = $x("/html/body/div[5]/div/div[2]/div/div/nav/a[1]");
+    private final SelenideElement plastic = $x("//a[contains(@href, \"/select-facade/plastik/\")]");
     private final SelenideElement facadeWithOutEdge = $x("/html/body/div[5]/div/div[2]/div[2]/div/div[1]/div/div[1]/a/span");
     private final ElementsCollection decorCollection = $$x("//div[contains(@class, \"col-md-6 col-lg-3 mb-4 decor-item\")]");
     private final SelenideElement continue1 = $x("//*[@id=\"exampleModal\"]/div/form/div/div[3]/button[2]");

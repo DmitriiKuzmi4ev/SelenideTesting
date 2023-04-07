@@ -9,7 +9,6 @@ import java.time.Duration;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class KedrPlasticSelect {
-    private static final String BASE_URL = "https://dev.allfdm.ru/";
 
     private final SelenideElement catalog = $x("/html/body/header/div/nav/ul/li[1]/a");
     private final SelenideElement kedr = $x("//a[contains(@href, \"/main/factory/select-factory/kedr/\")]");
@@ -22,23 +21,32 @@ public class KedrPlasticSelect {
     private final SelenideElement select3 = $x("//button[contains(@aria-owns,\"bs-select-3\")]");
     private final SelenideElement color1 = $x("//a[contains(@id, \"bs-select-3-1\")]");
 
-
-    public void kedrSelect() {
-        Selenide.open(BASE_URL);
-        /*Каталог*/
+    /*Каталог*/
+    public void catalogClick() {
         catalog.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Кедр*/
+    }
+    /*Кедр*/
+    public void kedrClick() {
         kedr.click();
-        /*Фасады из пластика*/
+    }
+    /*Фасады из пластика*/
+    public void plasticClick() {
         plastic.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Фасады без окромления*/
+    }
+    /*Фасады без окромления*/
+    public void facadeWithoutEdgeClick() {
         facadeWithOutEdge.shouldBe(Condition.enabled).click();
-        /*Выбрать категорию*/
-        select1.click();
-        /*Выбрать тип*/
+    }
+    /*Выбрать категорию*/
+    public void categorySelectClick() {
+        select1.shouldBe(Condition.enabled).click();
+    }
+    /*Выбрать тип*/
+    public void typeSelectClick() {
         select2.shouldBe(Condition.enabled).click();
-        /*Выбрать цвет*/
+    }
+    /*Выбрать цвет*/
+    public void colorSelectClick() {
         select3.shouldBe(Condition.enabled).click();
-
     }
 }

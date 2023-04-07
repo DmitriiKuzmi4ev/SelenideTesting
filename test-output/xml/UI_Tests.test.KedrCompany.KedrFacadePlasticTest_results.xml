@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SelenideTestingNew"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="18,390">
+  <properties />
+  
+  
+            <testcase name="kedrPlasticTest" time="18,390" classname="UI_Tests.test.KedrCompany.KedrFacadePlasticTest" />
+      
+</testsuite>

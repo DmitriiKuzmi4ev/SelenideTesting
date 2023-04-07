@@ -18,6 +18,12 @@ public class KedrPlasticSelectsTest extends ConfigurationForTest {
         fdmLoginPage.clickMainEnter();
 
         KedrPlasticSelect kedrPlasticSelect = new KedrPlasticSelect();
-        kedrPlasticSelect.kedrSelect();
+        kedrPlasticSelect.catalogClick();
+        kedrPlasticSelect.kedrClick();
+        kedrPlasticSelect.plasticClick();
+        kedrPlasticSelect.facadeWithoutEdgeClick();
+        kedrPlasticSelect.categorySelectClick();
+        kedrPlasticSelect.typeSelectClick();
+        kedrPlasticSelect.colorSelectClick();
     }
 }

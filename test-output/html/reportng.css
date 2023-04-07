@@ -1,13 +1,13 @@
 *                        {padding: 0; margin: 0;}
-a                        {color: #006699;}
+a                        {color: #006690;}
 a:visited                {color: #003366;}
 body                     {font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; line-height: 1.8em; font-size: 62.5%; margin: 1.8em 1em;}
 h1                       {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 2.7em; margin-bottom: 0.6667em;}
 h2                       {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1.8em; margin-bottom: 0;}
 p                        {font-size: 1.3em;}
-td                       {font-size: 1.3em;}
+td                       {font-size: 1.7em;}
 
-.header                  {font-size: 1.4em; font-weight: bold; text-align: left;}
+.header                  {font-size: 1.9em; font-weight: bold; text-align: left;}
 .passed                  {background-color: #44aa44;}
 .skipped                 {background-color: #ffaa00;}
 .failed                  {background-color: #ff4444;}
@@ -32,9 +32,9 @@ td                       {font-size: 1.3em;}
 .resultsTable .duration  {width: 6em;}
 .resultsTable td         {vertical-align: top; padding: 0 1em;}
 .resultsTable th         {padding: 0 .5em;}
-.number                  {text-align: right;}
+.number                  {text-align: center;}
 .zero                    {font-weight: normal;}
-.columnHeadings          {font-size: 1em;}
+.columnHeadings          {font-size: 1.3em;}
 .columnHeadings th       {font-weight: normal;}
 
 .configTable             {border: 1px solid #800000; color: #800000; margin-bottom: 1.5em;}
@@ -62,14 +62,14 @@ div.test                 {margin-top: 0.1em; clear: right; font-size: 1.3em;}
 
 .description             {border-bottom: 1px dotted #006699;}
 
-#meta                    {font-size: 1em; text-align: right; float: right;}
+#meta                    {font-size: 1.1em; text-align: right; float: right;}
 #systemInfo              {color: #666666;}
 
 /* Reporter log output (individual test ouput is style by "testOutput" above). */
 #log                     {font-family: Lucida Console, Monaco, Courier New, monospace; font-size: 1.3em; margin-top: 1.8em;}
 
-.overviewTable           {width: 100%; margin-top: 1.8em; line-height: 1.7em; border-spacing: 0.1em;}
-.overviewTable td        {padding: 0 1em;}
+.overviewTable           {width: 100%; margin-top: 4.8em; line-height: 2.1em; border-spacing: 0.3em;}
+.overviewTable td        {padding: 0 3em;}
 .overviewTable th        {padding: 0 .5em;}
 .overviewTable .duration {width: 6em;}
 .overviewTable .passRate {width: 6em;}

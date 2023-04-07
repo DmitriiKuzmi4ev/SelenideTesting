@@ -18,6 +18,22 @@ public class KedrFacadePlasticTest extends ConfigurationForTest {
         fdmLoginPage.clickMainEnter();
 
         KedrFacadePlastic kedrFacadePlastic = new KedrFacadePlastic();
-        kedrFacadePlastic.kedrPlastic();
+        kedrFacadePlastic.catalogClick();
+        kedrFacadePlastic.kedrClick();
+        kedrFacadePlastic.plasticClick();
+        kedrFacadePlastic.facadeWithOutEdgeClick();
+        kedrFacadePlastic.randomDecorClick();
+        kedrFacadePlastic.continue1CLick();
+        kedrFacadePlastic.heightAreaInsert();
+        kedrFacadePlastic.widthAreaInsert();
+        kedrFacadePlastic.calculateClick();
+        kedrFacadePlastic.scroll1Do();
+        kedrFacadePlastic.addToBasketClick();
+        kedrFacadePlastic.goToBasketClick();
+        kedrFacadePlastic.scroll2Do();
+        kedrFacadePlastic.goToCheckOutClick();
+        kedrFacadePlastic.qrCodeClick();
+        kedrFacadePlastic.deliveryCityClick();
+        kedrFacadePlastic.checkedPaymentBtn();
     }
 }

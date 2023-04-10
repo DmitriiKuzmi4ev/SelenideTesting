@@ -24,7 +24,7 @@ public class KedrFacadePlastic {
     private final SelenideElement scroll1 = $x("//a[contains(@data-href, \"/order/add-to-basket/\")]");
     private final SelenideElement scroll2 = $x("//a[contains(@data-type, \"go-to-checkout\")]");
     private final SelenideElement addToBasket = $x("//a[(@data-href=\"/order/add-to-basket/\")]");
-    private final SelenideElement goToBasket = $x("//a[(@class=\"btn btn-lg btn-success w-100 in-basket mb-4\")]");
+    private final SelenideElement goToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@href=\"/main/basket/\")]");
     private final SelenideElement goToCheckOut = $x("//a[(@class=\"btn btn-lg btn-success w-100 mb-4 cart-payment\")]");
     private final SelenideElement qrCode = $x("//input[(@value=\"raiff\")]//ancestor::label");
     private final SelenideElement qrCodeRadio = $x("//input[(@value=\"raiff\")]");
@@ -91,7 +91,7 @@ public class KedrFacadePlastic {
 
     /*Перейти в корзину*/
     public void goToBasketClick() {
-        goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        goToBasket.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
     }
 
     /*Скроллим до - перейти к оформлению*/

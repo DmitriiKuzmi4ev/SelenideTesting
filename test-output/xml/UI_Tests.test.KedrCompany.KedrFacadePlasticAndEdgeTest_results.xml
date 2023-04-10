@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SelenideTestingNew"
+<testsuite name="Проверка оформления заказов по компании Кедр"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="27,841">
+           time="103,421">
   <properties />
   
   
-            <testcase name="kedrPlasticAndEdgeTest" time="27,841" classname="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest" />
+            <testcase name="kedrPlasticAndEdgeTest" time="103,421" classname="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest" />
       
 </testsuite>

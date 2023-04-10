@@ -5,7 +5,9 @@
 
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter">
+            <parameter name="cssFile" value="src/main/resources/reportng.css"/>
+        </listener>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
     <test verbose="2" preserve-order="true" name="C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew">

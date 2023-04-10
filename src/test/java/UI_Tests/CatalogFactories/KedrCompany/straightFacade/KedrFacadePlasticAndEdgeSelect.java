@@ -12,7 +12,7 @@ public class KedrFacadePlasticAndEdgeSelect {
 
 
 
-    private final SelenideElement catalog = $x("//a[contains(@href, \"/main/factory/select-factory/\")]");
+    private final SelenideElement catalog = $x("//a[(@href=\"/main/factory/select-factory/\")]//ancestor::li");
     private final SelenideElement kedr = $x("//a[contains(@href, \"/main/factory/select-factory/kedr/\")]");
     private final SelenideElement plastic = $x("//a[contains(@href, \"/select-facade/plastik/\")]");
     private final SelenideElement facadeWithEdge = $x("//a[contains(@href, \"/catalog/decors/edge\")]");
@@ -27,7 +27,7 @@ public class KedrFacadePlasticAndEdgeSelect {
     }
     /*Кедр*/
     public void kedrClick() {
-        kedr.click();
+        kedr.shouldBe(Condition.enabled).click();
     }
     /*Фасады из пластика*/
     public void plasticClick() {

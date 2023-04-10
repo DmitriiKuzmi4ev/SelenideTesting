@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Проверка регистрации, навигации, ссылок, формы обратной связи"
+<testsuite name="SelenideTestingNew"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="1,818">
+           time="1,719">
   <properties />
   
   
-            <testcase name="fdmRegistrationTest" time="1,818" classname="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest" />
+            <testcase name="fdmRegistrationTest" time="1,719" classname="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest" />
       
 </testsuite>

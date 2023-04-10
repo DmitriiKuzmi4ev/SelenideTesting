@@ -9,17 +9,14 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class FdmLoginPage {
 
-    private static final String BASE_URL = "https://dev.allfdm.ru/";
     private static final String AUTH_CODE = "1111";
 
-    private final SelenideElement title = $x("/html/head/title");
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
-    private final SelenideElement enterBase = $x("//a[(@data-link=\"/personal/login_modal\")]");
+    private final SelenideElement enterBase = $x("//a[(@data-target=\"#auth-modal\")]");
     private final SelenideElement inputNumber = $x("//*[@id=\"phoneInput\"]");
     private final SelenideElement entering = $x("//*[@id=\"loginForm\"]/div[2]/button");
     private final SelenideElement codeInput = $x("//*[@id=\"codeInput\"]");
     private final SelenideElement mainEnter = $x("//*[@id=\"auth-modal\"]/div/div/div/form[1]/div[2]/button");
-    private final SelenideElement orders = $x("//a[(@href=\"/orders\")]");
 
     /*Город выбран верно*/
     public void applyCity() {

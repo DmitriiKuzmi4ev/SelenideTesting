@@ -26,13 +26,13 @@ public class KedrFacadePlasticAndEdgeTest extends ConfigurationForTest {
         kedrFacadePlasticAndEdge.continue1Click();
         kedrFacadePlasticAndEdge.insertHeight();
         kedrFacadePlasticAndEdge.insertWidth();
-        kedrFacadePlasticAndEdge.scroll3Do();
+        kedrFacadePlasticAndEdge.scroll1Do();
         kedrFacadePlasticAndEdge.randomEdgeClick();
         kedrFacadePlasticAndEdge.calculateClick();
-        kedrFacadePlasticAndEdge.scroll1Do();
+        kedrFacadePlasticAndEdge.scroll2Do();
         kedrFacadePlasticAndEdge.addToBasketClick();
         kedrFacadePlasticAndEdge.goToBasket();
-        kedrFacadePlasticAndEdge.scroll2Do();
+        kedrFacadePlasticAndEdge.scroll3Do();
         kedrFacadePlasticAndEdge.goToCheckOutClick();
         kedrFacadePlasticAndEdge.qrCodeClick();
         kedrFacadePlasticAndEdge.deliveryCityClick();

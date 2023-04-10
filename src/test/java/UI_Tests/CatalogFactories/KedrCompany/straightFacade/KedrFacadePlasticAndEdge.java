@@ -20,19 +20,21 @@ public class KedrFacadePlasticAndEdge {
     private final SelenideElement continue1 = $x("//button[contains(@class, \"btn btn-primary\")]");
     private final SelenideElement heightArea = $x("//input[contains(@class, \"detail-height-input form-control\")]");
     private final SelenideElement widthArea = $x("//input[contains(@class, \"detail-width-input form-control\")]");
-    private final SelenideElement scroll3 = $x("//button[contains(@class, \"btn btn-success mb-4 disabled\")]");
     private final ElementsCollection edgeCollection = $$x("//div[contains(@class, \"d-flex mb-2 align-items-center edge-decor-item-parent\")]");
     private final SelenideElement calculate = $x("//button[contains(@class, \"btn btn-success mb-4\")]");
-    private final SelenideElement scroll1 = $x("//a[contains(@data-href, \"/order/add-to-basket/\")]");
-    private final SelenideElement scroll2 = $x("//a[(@class=\"btn btn-lg btn-success w-100 in-basket mb-4\")]");
     private final SelenideElement addToBasket = $x("//a[contains(@class, \"add-to-basket-js \")]");
-    private final SelenideElement goToBasket = $x("//a[contains(@class, \"in-basket mb-4\")]");
+    private final SelenideElement goToBasket = $x("//a[(@class=\"btn btn-lg btn-success w-100 in-basket mb-4\")]");
     private final SelenideElement goToCheckOut = $x("//a[contains(@class, \"btn btn-lg btn-success w-100 mb-4\")]");
     private final SelenideElement qrCode = $x("//input[(@value=\"raiff\")]//ancestor::label");
     private final SelenideElement qrCodeRadio = $x("//input[(@value=\"raiff\")]");
     private final SelenideElement deliveryCity = $x("//label[contains(@class, \"delivery-city-label\")]");
     private final SelenideElement deliveryCityCheckbox = $x("//input[(@id=\"deliveryCityCheckbox\")]");
     private final SelenideElement paymentBtn = $x("//button[contains(@class, \" btn-success w-100\")]");
+
+    private final SelenideElement scroll1 = $x("//button[contains(@class, \"btn btn-success mb-4 disabled\")]");
+    private final SelenideElement scroll2 = $x("//a[(@data-href=\"/order/add-to-basket/\")]");
+    private final SelenideElement scroll3 = $x("//a[(@data-type=\"go-to-checkout\")]");
+
 
     /*Каталог*/
     public void catalogClick() {
@@ -69,8 +71,8 @@ public class KedrFacadePlasticAndEdge {
         widthArea.shouldBe(Condition.enabled).sendKeys(BASE_WIDTH);
     }
     /*Скролл страницы*/
-    public void scroll3Do() {
-        scroll3.scrollTo();
+    public void scroll1Do() {
+        scroll1.scrollTo();
     }
     /*Этап выбора декора кромки*/
     public void randomEdgeClick() {
@@ -83,8 +85,8 @@ public class KedrFacadePlasticAndEdge {
         calculate.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
     /*Скролл страницы*/
-    public void scroll1Do () {
-        scroll1.scrollTo();
+    public void scroll2Do () {
+        scroll2.scrollTo();
     }
     /*Добавить в корзину*/
     public void addToBasketClick() {
@@ -95,8 +97,8 @@ public class KedrFacadePlasticAndEdge {
         goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
     /*Скроллим до - перейти к оформлению*/
-    public void scroll2Do() {
-        scroll2.scrollTo();
+    public void scroll3Do() {
+        scroll3.scrollTo();
     }
     /*Перейти к оформлению*/
     public void goToCheckOutClick() {

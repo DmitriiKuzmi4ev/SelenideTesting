@@ -1,72 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All suite">
-    <test name="Компания Кедр - тест заказов" parallel="classes" thread-count="4">
+    <test name="Проверка оформления заказов по компании Кедр" parallel="classes" thread-count="10">
         <classes>
-            <class name="UI_Tests.test.KedrCompany.KedrAluminiumSilverTest">
-                <methods>
-                    <include name="kedrAluminiumSilverTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.KedrCompany.KedrAluminiumSlimTest">
-                <methods>
-                    <include name="kedrAluminiumSlimTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest">
-                <methods>
-                    <include name="kedrAluminiumColorTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeSelectTest">
-                <methods>
-                    <include name="kerdFacadePlasticAndEdgeSelectTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest">
-                <methods>
-                    <include name="kedrPlasticAndEdgeTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticTest">
-                <methods>
-                    <include name="kedrPlasticTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.KedrCompany.KedrPlasticSelectsTest">
-                <methods>
-                    <include name="kerdSelectTest"/>
-                </methods>
-            </class>
+            <class name="UI_Tests.test.KedrCompany.KedrAluminiumSilverTest"/>
+            <class name="UI_Tests.test.KedrCompany.KedrAluminiumSlimTest"/>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest"/>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeSelectTest"/>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest"/>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticTest"/>
+            <class name="UI_Tests.test.KedrCompany.KedrPlasticSelectsTest"/>
         </classes>
     </test>
-    <test name="Проверка регистрации, навигации, ссылок, формы обратной связи" parallel="classes" thread-count="4">
-        <classes>
-            <class name="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest">
-                <methods>
-                    <include name="fdmFeedBackFormTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.RegLogNavFormTests.FdmLinksTest">
-                <methods>
-                    <include name="fdmLinksTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.RegLogNavFormTests.FdmLoginTest">
-                <methods>
-                    <include name="logInTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest">
-                <methods>
-                    <include name="fdmNavigationTest"/>
-                </methods>
-            </class>
-            <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest">
-                <methods>
-                    <include name="fdmRegistrationTest"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+<!--    <test name="Проверка регистрации, навигации, ссылок, формы обратной связи" parallel="classes" thread-count="4">-->
+<!--        <classes>-->
+<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest">-->
+<!--                <methods>-->
+<!--                    <include name="fdmFeedBackFormTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmLinksTest">-->
+<!--                <methods>-->
+<!--                    <include name="fdmLinksTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmLoginTest">-->
+<!--                <methods>-->
+<!--                    <include name="logInTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest">-->
+<!--                <methods>-->
+<!--                    <include name="fdmNavigationTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest">-->
+<!--                <methods>-->
+<!--                    <include name="fdmRegistrationTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

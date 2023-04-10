@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class KedrAluminiumSlimTest extends ConfigurationForTest {
 
     @Test(testName = "Тест - Кедр - заказ Фасады алюминиевый профиль - slim", priority = 1)
-    public void kedrPlasticTest() {
+    public void kedrAluminiumSlimTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
         fdmLoginPage.clickEnter();
@@ -18,6 +18,23 @@ public class KedrAluminiumSlimTest extends ConfigurationForTest {
         fdmLoginPage.clickMainEnter();
 
         KedrAluminiumSlim kedrAluminiumSlim = new KedrAluminiumSlim();
-        kedrAluminiumSlim.kedrSlim();
+        kedrAluminiumSlim.kedrCatalogClick();
+        kedrAluminiumSlim.kedrClick();
+        kedrAluminiumSlim.plasticClick();
+        kedrAluminiumSlim.aluminiumSlimClick();
+        kedrAluminiumSlim.randomDecorClick();
+        kedrAluminiumSlim.continue1Click();
+        kedrAluminiumSlim.insertHeight();
+        kedrAluminiumSlim.insertWidth();
+        kedrAluminiumSlim.randomEdgeClick();
+        kedrAluminiumSlim.scroll1Do();
+        kedrAluminiumSlim.calculateClick();
+        kedrAluminiumSlim.addToBasketClick();
+        kedrAluminiumSlim.goToBasketClick();
+        kedrAluminiumSlim.scroll3Do();
+        kedrAluminiumSlim.goToCheckOutClick();
+        kedrAluminiumSlim.qrCodeClick();
+        kedrAluminiumSlim.deliveryCityClick();
+        kedrAluminiumSlim.checkedPaymentBtn();
     }
 }

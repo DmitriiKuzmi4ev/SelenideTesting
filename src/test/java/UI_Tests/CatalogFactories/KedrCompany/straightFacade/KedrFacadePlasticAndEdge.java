@@ -24,7 +24,7 @@ public class KedrFacadePlasticAndEdge {
     private final ElementsCollection edgeCollection = $$x("//div[contains(@class, \"d-flex mb-2 align-items-center edge-decor-item-parent\")]");
     private final SelenideElement calculate = $x("//button[contains(@class, \"btn btn-success mb-4\")]");
     private final SelenideElement scroll1 = $x("//a[contains(@data-href, \"/order/add-to-basket/\")]");
-    private final SelenideElement scroll2 = $x("//a[contains(@data-type, \"go-to-checkout\")]");
+    private final SelenideElement scroll2 = $x("//a[(@class=\"btn btn-lg btn-success w-100 in-basket mb-4\")]");
     private final SelenideElement addToBasket = $x("//a[contains(@class, \"add-to-basket-js \")]");
     private final SelenideElement goToBasket = $x("//a[contains(@class, \"in-basket mb-4\")]");
     private final SelenideElement goToCheckOut = $x("//a[contains(@class, \"btn btn-lg btn-success w-100 mb-4\")]");

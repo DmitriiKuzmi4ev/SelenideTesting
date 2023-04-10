@@ -3,24 +3,159 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - SelenideTestingNew</title>
+  <title>Test Results Report - Компания Кедр - тест заказов</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>SelenideTestingNew</h1>
+<h1>Компания Кедр - тест заказов</h1>
 <p>
-  Test duration: 51,130s
+  Test duration: 338,876s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  kedrPlasticAndEdgeTest
+      </td>
+  <td class="duration">
+    102,940s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>Element not found {By.xpath: //a[contains(@data-type, &quot;go-to-checkout&quot;)]}<br/>
+Expected: exist<br/>
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681126942762.0.html<br/>
+Timeout: 40 s.<br/>
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@data-type, &quot;go-to-checkout&quot;)]&quot;}</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:88)<br />
+              com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)<br />
+              com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:32)<br />
+              com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:154)<br />
+              com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy12.scrollTo(Unknown Source)<br />
+              UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlasticAndEdge.scroll2Do(KedrFacadePlasticAndEdge.java:99)<br />
+              UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest.kedrPlasticAndEdgeTest(KedrFacadePlasticAndEdgeTest.java:35)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+              java.base/java.lang.Thread.run(Thread.java:1589)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@data-type, &quot;go-to-checkout&quot;)]&quot;}<br/>
+&nbsp; (Session info: chrome=111.0.5563.65)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [0c8c6ebc2095277b794cc0d1c37f5dbb, findElement {using=xpath, value=//a[contains(@data-type, &quot;go-to-checkout&quot;)]}]<br/>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:57380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57380/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 0c8c6ebc2095277b794cc0d1c37f5dbb</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
+                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)<br />
+                      org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+                      org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+                      org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
+                      org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+                      org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+                      com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)<br />
+                      com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)<br />
+                      com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)<br />
+                      com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)<br />
+                      com.codeborne.selenide.commands.ScrollTo.execute(ScrollTo.java:17)<br />
+                      com.codeborne.selenide.commands.ScrollTo.execute(ScrollTo.java:12)<br />
+                      com.codeborne.selenide.commands.Commands.execute(Commands.java:159)<br />
+                      com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)<br />
+                      com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)<br />
+                      jdk.proxy2/jdk.proxy2.$Proxy12.scrollTo(Unknown Source)<br />
+                      UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlasticAndEdge.scroll2Do(KedrFacadePlasticAndEdge.java:99)<br />
+                      UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest.kedrPlasticAndEdgeTest(KedrFacadePlasticAndEdgeTest.java:35)<br />
+                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+                      org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
+                      org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
+                      org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+                      org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br />
+                      org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
+                      org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+                      org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+                      java.base/java.lang.Thread.run(Thread.java:1589)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrAluminiumSilverTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  kedrAluminiumSilverTest
+      </td>
+  <td class="duration">
+    75,366s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrAluminiumSlimTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  kedrAluminiumSlimTest
+      </td>
+  <td class="duration">
+    27,711s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
           <tr>
         <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest</td>
       </tr>
@@ -30,7 +165,61 @@
                   kedrAluminiumColorTest
       </td>
   <td class="duration">
-    48,945s
+    28,810s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeSelectTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  kerdFacadePlasticAndEdgeSelectTest
+      </td>
+  <td class="duration">
+    35,228s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrFacadePlasticTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  kedrPlasticTest
+      </td>
+  <td class="duration">
+    38,686s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrPlasticSelectsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  kerdSelectTest
+      </td>
+  <td class="duration">
+    5,328s
   </td>
   <td class="result">
         

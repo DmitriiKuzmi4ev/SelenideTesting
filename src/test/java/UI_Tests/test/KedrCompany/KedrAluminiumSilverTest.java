@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class KedrAluminiumSilverTest extends ConfigurationForTest {
 
     @Test(testName = "Тест - Кедр - заказ Фасады алюминиевый профиль - silver", priority = 1)
-    public void kedrPlasticTest() {
+    public void kedrAluminiumSilverTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
         fdmLoginPage.clickEnter();
@@ -19,6 +19,23 @@ public class KedrAluminiumSilverTest extends ConfigurationForTest {
         fdmLoginPage.clickMainEnter();
 
         KedrAluminiumSilver kedrAluminiumSilver = new KedrAluminiumSilver();
-        kedrAluminiumSilver.kedrSilver();
+        kedrAluminiumSilver.catalogClick();
+        kedrAluminiumSilver.kedrClick();
+        kedrAluminiumSilver.plasticClick();
+        kedrAluminiumSilver.aluminiumSilverClick();
+        kedrAluminiumSilver.randomDecorClick();
+        kedrAluminiumSilver.continue1Click();
+        kedrAluminiumSilver.insertHeight();
+        kedrAluminiumSilver.insertWidth();
+        kedrAluminiumSilver.randomEdgeClick();
+        kedrAluminiumSilver.scroll1Do();
+        kedrAluminiumSilver.calculateClick();
+        kedrAluminiumSilver.addToBasketClick();
+        kedrAluminiumSilver.goToBasketClick();
+        kedrAluminiumSilver.scroll3Do();
+        kedrAluminiumSilver.goToCheckoutClick();
+        kedrAluminiumSilver.qrCodeClick();
+        kedrAluminiumSilver.deliveryCityClick();
+        kedrAluminiumSilver.checkedPaymentBtn();
     }
 }

@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" [
-        <!ENTITY reportng_css SYSTEM "src/main/resources/reportng.css">
-        ]>
-
-<suite name="All Test Suite">
-    <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter">
-            <parameter name="cssFile" value="src/main/resources/reportng.css"/>
-        </listener>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-    </listeners>
-    <test verbose="2" preserve-order="true" name="C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All suite">
+    <test name="Компания Кедр - тест заказов" parallel="classes" thread-count="4">
         <classes>
             <class name="UI_Tests.test.KedrCompany.KedrAluminiumSilverTest">
                 <methods>
-                    <include name="kedrPlasticTest"/>
+                    <include name="kedrAluminiumSilverTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.KedrCompany.KedrAluminiumSlimTest">
                 <methods>
-                    <include name="kedrPlasticTest"/>
+                    <include name="kedrAluminiumSlimTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest">
                 <methods>
-                    <include name="kedrPlasticTest"/>
+                    <include name="kedrAluminiumColorTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeSelectTest">
                 <methods>
-                    <include name="kerdSelectTest"/>
+                    <include name="kerdFacadePlasticAndEdgeSelectTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest">
@@ -47,29 +38,33 @@
                     <include name="kerdSelectTest"/>
                 </methods>
             </class>
+        </classes>
+    </test>
+    <test name="Проверка регистрации, навигации, ссылок, формы обратной связи" parallel="classes" thread-count="4">
+        <classes>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest">
                 <methods>
-                    <include name="FdmFeedBackFormTest"/>
+                    <include name="fdmFeedBackFormTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmLinksTest">
                 <methods>
-                    <include name="FdmLinksTest"/>
+                    <include name="fdmLinksTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmLoginTest">
                 <methods>
-                    <include name="FdmLoginTest"/>
+                    <include name="logInTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest">
                 <methods>
-                    <include name="FdmNavigationTest"/>
+                    <include name="fdmNavigationTest"/>
                 </methods>
             </class>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest">
                 <methods>
-                    <include name="FdmRegistrationTest"/>
+                    <include name="fdmRegistrationTest"/>
                 </methods>
             </class>
         </classes>

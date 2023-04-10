@@ -91,7 +91,7 @@ public class KedrFacadePlastic {
 
     /*Перейти в корзину*/
     public void goToBasketClick() {
-        goToBasket.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
+        goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
     /*Скроллим до - перейти к оформлению*/

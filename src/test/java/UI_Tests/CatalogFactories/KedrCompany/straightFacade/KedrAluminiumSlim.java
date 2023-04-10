@@ -22,7 +22,7 @@ public class KedrAluminiumSlim {
     private final ElementsCollection edgeCollection = $$x("//div[contains(@class, \"d-flex mb-2 align-items-center edge-decor-item-parent\")]");
     private final SelenideElement calculate = $x("//button[contains(@class, \"btn btn-success mb-4\")]");
     private final SelenideElement addToBasket = $x("//a[contains(@class, \"add-to-basket-js\")]");
-    private final SelenideElement goToBasket = $x("//a[(@class=\"btn btn-lg btn-success w-100 in-basket mb-4\")]");
+    private final SelenideElement goToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@href=\"/main/basket/\")]");
     private final SelenideElement goToCheckOut = $x("//a[contains(@class, \"btn btn-lg btn-success w-100 mb-4\")]");
     private final SelenideElement qrCode = $x("//input[(@value=\"raiff\")]//ancestor::label");
     private final SelenideElement qrCodeRadio = $x("//input[(@value=\"raiff\")]");

@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class KedrAluminiumColor {
 
-    private static final String BASE_URL = "https://dev.allfdm.ru/";
     private static final String BASE_HEIGHT = "716";
     private static final String BASE_WIDTH = "497";
 
@@ -30,52 +29,97 @@ public class KedrAluminiumColor {
     private final SelenideElement addToBasket = $x("//a[contains(@class, \"add-to-basket-js\")]");
     private final SelenideElement goToBasket = $x("//a[contains(@class,  \"in-basket mb-4\")]");
     private final SelenideElement goToCheckOut = $x("//a[contains(@class, \"btn btn-lg btn-success w-100 mb-4\")]");
-    private final SelenideElement qrCode = $x("//span[contains(@class, \"custom-control-label d-block\")]");
-    private final SelenideElement deliveryCity = $x("//label[contains(@class, \"delivery-city-label\")]");
+    private final SelenideElement qrCode = $x("//input[(@value=\"raiff\")]//ancestor::label");
+    private final SelenideElement qrCodeRadio = $x("//input[(@value=\"raiff\")]");
+    private final SelenideElement deliveryCity = $x("//label[(@for=\"deliveryCityCheckbox\")]");
+    private final SelenideElement deliveryCityCheckbox = $x("//input[(@id=\"deliveryCityCheckbox\")]");
     private final SelenideElement paymentBtn = $x("//button[contains(@class, \" btn-success w-100\")]");
 
-    public void kedrAluminium() {
-        Selenide.open(BASE_URL);
-        /*Каталог*/
+    /*Каталог*/
+    public void kedrCatalog() {
         catalog.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Фабрика Кедр*/
-        kedr.click();
-        /*Фасады из пластика*/
+    }
+    /*Фабрика Кедр*/
+    public void kedrClick() {
+        kedr.shouldBe(Condition.enabled).click();
+    }
+    /*Фасады из пластика*/
+    public void plasticClick() {
         plastic.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Фасады ал. профиль цветной*/
+    }
+    /*Фасады ал. профиль цветной*/
+    public void aluminiumColorCLick() {
         aluminiumColor.shouldBe(Condition.enabled).click();
-        /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомный декор*/
+    }
+    /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомный декор*/
+    public void randomDecorClick() {
         SelenideElement element = RandomUtils
                 .getRandomElementFromList(decorCollection.shouldBe(CollectionCondition.sizeNotEqual(0)));
         element.click();
-        /*Продолжить*/
+    }
+    /*Продолжить*/
+    public void continue1Click() {
         continue1.shouldBe(Condition.enabled).click();
-        /*Высота*/
+    }
+    /*Высота*/
+    public void insertHeight() {
         heightArea.shouldBe(Condition.enabled).sendKeys(BASE_HEIGHT);
-        /*Ширина*/
+    }
+    /*Ширина*/
+    public void insertWidth() {
         widthArea.shouldBe(Condition.enabled).sendKeys(BASE_WIDTH);
-        /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомный декор кромки*/
+    }
+    /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомный декор кромки*/
+    public void randomEdgeClick() {
         SelenideElement element1 = RandomUtils
                 .getRandomElementFromList(edgeCollection.shouldBe(CollectionCondition.sizeNotEqual(0)));
         element1.click();
-        /*Скролл к кнопке - рассчитать*/
+    }
+    /*Скролл к кнопке - рассчитать*/
+    public void scroll3Do() {
         scroll3.scrollTo();
-        /*Рассчитать стоимость заказа*/
+    }
+    /*Рассчитать стоимость заказа*/
+    public void calculateClick() {
         calculate.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         scroll1.scrollTo();
-        /*Добавить в корзину*/
+    }
+    /*Добавить в корзину*/
+    public void addToBasketClick() {
         addToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Перейти в корзину*/
+    }
+    /*Перейти в корзину*/
+    public void goToBasketClick() {
         goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Скроллим до - перейти к оформлению*/
+    }
+    /*Скроллим до - перейти к оформлению*/
+    public void scroll2Do() {
         scroll2.scrollTo();
-        /*Перейти к оформлению*/
+    }
+    /*Перейти к оформлению*/
+    public void goToCheckOutClick() {
         goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
-        /*Выбрать оплату по QR*/
-        qrCode.shouldBe(Condition.enabled).click();
-        /*Подтвердить город доставки*/
-        deliveryCity.shouldBe(Condition.enabled).click();
-        /*Кнопка Оплатить - активна*/
-        paymentBtn.shouldBe(Condition.enabled);
+    }
+    /*Выбрать оплату по QR*/
+    public void qrCodeClick() {
+        qrCode.click();
+        if (!qrCodeRadio.isSelected()) {
+            System.out.println("Ошибка - кнопка оплатить по QR коду не рабтает");
+        }
+    }
+
+    /*Подтвердить город доставки*/
+    public void deliveryCityClick() {
+        deliveryCity.click();
+        if (!deliveryCityCheckbox.isSelected()) {
+            System.out.println("Ошибка - чекбокс - подтвердить город доставки не работает");
+        }
+    }
+
+    /*Кнопка Оплатить - активна*/
+    public void checkedPaymentBtn() {
+        if (!paymentBtn.isEnabled()) {
+            System.out.println("Ошибка - кнопка оплатить не активна");
+        }
     }
 }

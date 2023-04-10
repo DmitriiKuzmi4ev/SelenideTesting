@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class KedrFacadePlasticAndEdgeSelectTest extends ConfigurationForTest {
 
     @Test(testName = "Тест - Кедр - работа выпадающих селектов в фасадах из пластика с кромкой", priority = 1)
-    public void kerdSelectTest() {
+    public void kerdFacadePlasticAndEdgeSelectTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
         fdmLoginPage.clickEnter();

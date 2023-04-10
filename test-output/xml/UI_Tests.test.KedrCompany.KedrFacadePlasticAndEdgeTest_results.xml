@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="30,458">
+           time="80,573">
   <properties />
   
   
-            <testcase name="kedrPlasticAndEdgeTest" time="30,458" classname="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest" />
+            <testcase name="kedrPlasticAndEdgeTest" time="80,573" classname="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest" />
       
 </testsuite>

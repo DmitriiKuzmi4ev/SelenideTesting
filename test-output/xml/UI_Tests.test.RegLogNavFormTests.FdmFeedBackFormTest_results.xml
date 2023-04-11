@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Форма обратной связи"
+<testsuite name="003 - Форма обратной связи"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="5,607">
+           time="5,437">
   <properties />
   
   
-            <testcase name="fdmFeedBackFormTest" time="5,607" classname="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest" />
+            <testcase name="fdmFeedBackFormTest" time="5,437" classname="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest" />
       
 </testsuite>

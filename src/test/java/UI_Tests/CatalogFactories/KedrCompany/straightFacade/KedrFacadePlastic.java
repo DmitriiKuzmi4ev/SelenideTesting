@@ -22,7 +22,7 @@ public class KedrFacadePlastic {
     private final SelenideElement widthArea = $x("//input[contains(@class, \"detail-width-input form-control\")]");
     private final SelenideElement calculate = $x("//div[(@id=\"calculateButtonBlock\")]//ancestor::button[(@id=\"submitButton\")]");
     private final SelenideElement addToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@data-href=\"/order/add-to-basket/\")]");
-    private final SelenideElement goToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@href=\"/main/basket/\")]");
+    private final SelenideElement goToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@class=\"btn btn-lg btn-success w-100 in-basket mb-4\")]");
     private final SelenideElement goToCheckOut = $x("//a[(@data-type=\"go-to-checkout\")]");
     private final SelenideElement qrCode = $x("//input[(@value=\"raiff\")]//ancestor::label");
     private final SelenideElement qrCodeRadio = $x("//input[(@value=\"raiff\")]");

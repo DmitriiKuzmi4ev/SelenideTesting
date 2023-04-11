@@ -3,16 +3,16 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Проверка оформления заказа по компании Кедр</title>
+  <title>Test Results Report - 006 - Проверка оформления заказа по компании Demfa</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Проверка оформления заказа по компании Кедр</h1>
+<h1>006 - Проверка оформления заказа по компании Demfa</h1>
 <p>
-  Test duration: 54,026s
+  Test duration: 62,494s
 </p>
 
 
@@ -20,40 +20,35 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrFacadePlasticTest</td>
+        <td colspan="3" class="group">UI_Tests.test.Demfa.DemfaEmalTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  kedrPlasticTest
+                  standartFacadePvhTest
       </td>
   <td class="duration">
-    41,179s
+    59,934s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>Element not found {By.xpath: //div[(@class=&quot;card-body&quot;)]//ancestor::a[(@href=&quot;/main/basket/&quot;)]}<br/>
-Expected: enabled<br/>
-Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681217872885.0.html<br/>
-Timeout: 30 s.<br/>
-Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[(@class=&quot;card-body&quot;)]//ancestor::a[(@href=&quot;/main/basket/&quot;)]&quot;}</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>Element not found {By.xpath: //input[(@id=&quot;order_promo_code_promoCode&quot;)]}<br/>
+Expected: exist<br/>
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681223623048.1.html<br/>
+Timeout: 40 s.<br/>
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[(@id=&quot;order_promo_code_promoCode&quot;)]&quot;}</b></a><br />
     <div class="stackTrace" id="exception-0">
               com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:88)<br />
               com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)<br />
-              com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:140)<br />
-              com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:124)<br />
-              com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:101)<br />
-              com.codeborne.selenide.commands.Should.execute(Should.java:30)<br />
-              com.codeborne.selenide.commands.Should.execute(Should.java:14)<br />
-              com.codeborne.selenide.commands.Commands.execute(Commands.java:159)<br />
-              com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)<br />
+              com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:32)<br />
+              com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:154)<br />
               com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)<br />
-              jdk.proxy2/jdk.proxy2.$Proxy12.shouldBe(Unknown Source)<br />
-              UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlastic.goToBasketClick(KedrFacadePlastic.java:96)<br />
-              UI_Tests.test.KedrCompany.KedrFacadePlasticTest.kedrPlasticTest(KedrFacadePlasticTest.java:33)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy12.scrollTo(Unknown Source)<br />
+              UI_Tests.CatalogFactories.DemfaCompany.DemfaEmal.scroll3Do(DemfaEmal.java:120)<br />
+              UI_Tests.test.Demfa.DemfaEmalTest.standartFacadePvhTest(DemfaEmalTest.java:37)<br />
               java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
               java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
               org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
@@ -74,15 +69,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
               java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
               java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
               java.base/java.lang.Thread.run(Thread.java:1589)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[(@class=&quot;card-body&quot;)]//ancestor::a[(@href=&quot;/main/basket/&quot;)]&quot;}<br/>
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[(@id=&quot;order_promo_code_promoCode&quot;)]&quot;}<br/>
 &nbsp; (Session info: chrome=111.0.5563.65)<br/>
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;<br/>
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Command: [930c69934fc7e0f64044135741c42f4e, findElement {using=xpath, value=//div[(@class=&quot;card-body&quot;)]//ancestor::a[(@href=&quot;/main/basket/&quot;)]}]<br/>
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:49600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49600/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: 930c69934fc7e0f64044135741c42f4e</a><br />
+Command: [9b8f4bdb871866d0a5219a69ead0c42d, findElement {using=xpath, value=//input[(@id=&quot;order_promo_code_promoCode&quot;)]}]<br/>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65326}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65326/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 9b8f4bdb871866d0a5219a69ead0c42d</a><br />
         <div class="stackTrace" id="exception-1">
                       java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
                       java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
@@ -102,16 +97,14 @@ Session ID: 930c69934fc7e0f64044135741c42f4e</a><br />
                       com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)<br />
                       com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)<br />
                       com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)<br />
-                      com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:113)<br />
-                      com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:101)<br />
-                      com.codeborne.selenide.commands.Should.execute(Should.java:30)<br />
-                      com.codeborne.selenide.commands.Should.execute(Should.java:14)<br />
+                      com.codeborne.selenide.commands.ScrollTo.execute(ScrollTo.java:17)<br />
+                      com.codeborne.selenide.commands.ScrollTo.execute(ScrollTo.java:12)<br />
                       com.codeborne.selenide.commands.Commands.execute(Commands.java:159)<br />
                       com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)<br />
                       com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)<br />
-                      jdk.proxy2/jdk.proxy2.$Proxy12.shouldBe(Unknown Source)<br />
-                      UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlastic.goToBasketClick(KedrFacadePlastic.java:96)<br />
-                      UI_Tests.test.KedrCompany.KedrFacadePlasticTest.kedrPlasticTest(KedrFacadePlasticTest.java:33)<br />
+                      jdk.proxy2/jdk.proxy2.$Proxy12.scrollTo(Unknown Source)<br />
+                      UI_Tests.CatalogFactories.DemfaCompany.DemfaEmal.scroll3Do(DemfaEmal.java:120)<br />
+                      UI_Tests.test.Demfa.DemfaEmalTest.standartFacadePvhTest(DemfaEmalTest.java:37)<br />
                       java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
                       java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
                       org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
@@ -139,27 +132,6 @@ Session ID: 930c69934fc7e0f64044135741c42f4e</a><br />
       </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">UI_Tests.test.KedrCompany.KedrPlasticSelectsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  kerdSelectTest
-      </td>
-  <td class="duration">
-    4,912s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-      </table>
   
 </body>
 </html>

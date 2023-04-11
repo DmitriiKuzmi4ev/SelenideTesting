@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Навигация на сайте и ссылки"
+<testsuite name="002 - Навигация на сайте и ссылки"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="9,342">
+           time="9,005">
   <properties />
   
   
-            <testcase name="fdmNavigationTest" time="9,342" classname="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest" />
+            <testcase name="fdmNavigationTest" time="9,005" classname="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest" />
       
 </testsuite>

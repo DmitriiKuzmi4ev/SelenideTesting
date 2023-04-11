@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Регистрация и авторизация"
+<testsuite name="001 - Регистрация и авторизация"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="4,061">
+           time="4,143">
   <properties />
   
   
-            <testcase name="logInTest" time="4,061" classname="UI_Tests.test.RegLogNavFormTests.FdmLoginTest" />
+            <testcase name="logInTest" time="4,143" classname="UI_Tests.test.RegLogNavFormTests.FdmLoginTest" />
       
 </testsuite>

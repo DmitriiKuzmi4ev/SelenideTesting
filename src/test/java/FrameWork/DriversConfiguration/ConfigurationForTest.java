@@ -15,8 +15,8 @@ public class ConfigurationForTest {
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1920x1080";
-        Configuration.headless = false;
-        Configuration.holdBrowserOpen = true;
+        Configuration.headless = true;
+        Configuration.holdBrowserOpen = false;
         Configuration.timeout = 40000;
         Configuration.pollingInterval = 500;
         Configuration.fastSetValue = true;

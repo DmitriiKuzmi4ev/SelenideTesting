@@ -25,7 +25,7 @@ public class StandartFacadePvh {
     private final SelenideElement widthArea = $x("//input[contains(@class, \"detail-width-input form-control\")]");
     private final SelenideElement calculate = $x("//div[(@id=\"calculateButtonBlock\")]//ancestor::button[(@id=\"submitButton\")]");
     private final SelenideElement addToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@data-href=\"/order/add-to-basket/\")]");
-    private final SelenideElement goToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@href=\"/main/basket/\")]");
+    private final SelenideElement goToBasket = $x("/html/body/div[5]/div/div[2]/div[2]/div[2]/div[2]/div/a[1]");
     private final SelenideElement goToCheckOut = $x("//a[(@data-type=\"go-to-checkout\")]");
     private final SelenideElement qrCode = $x("//input[(@value=\"raiff\")]//ancestor::label");
     private final SelenideElement qrCodeRadio = $x("//input[(@value=\"raiff\")]");
@@ -35,7 +35,7 @@ public class StandartFacadePvh {
 
     private final SelenideElement scroll1 = $x("//div[(@class=\"text-center mb-4\")]//ancestor::button[(@id=\"submitButton\")]");
     private final SelenideElement scroll2 = $x("//a[(@data-href=\"/order/add-to-basket/\")]");
-    private final SelenideElement scroll3 = $x("//a[(@data-type=\"go-to-checkout\")]");
+    private final SelenideElement scroll3 = $x("//a[(@data-type=\"go-to-checkout\")]//ancestor::div[(@class=\"card-body\")]");
 
     /*Каталог*/
     public void catalogClick() {
@@ -117,11 +117,11 @@ public class StandartFacadePvh {
 
     /*Скроллим до - перейти к оформлению*/
     public void scroll3Do() {
-        scroll3.shouldBe(Condition.visible);
-        Selenide.executeJavaScript("arguments[0].scrollIntoView(true)", scroll3);
+
     }
     /*Перейти к оформлению*/
     public void goToCheckOutClick() {
+        scroll3.shouldBe(Condition.enabled, Duration.ofSeconds(30)).scrollTo();
         goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 

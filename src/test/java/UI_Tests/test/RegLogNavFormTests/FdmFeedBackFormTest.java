@@ -12,6 +12,7 @@ public class FdmFeedBackFormTest extends ConfigurationForTest {
     public void fdmFeedBackFormTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
+        fdmLoginPage.catalogClick();
         fdmLoginPage.clickEnter();
         fdmLoginPage.insertNumber();
         fdmLoginPage.clickEntering();

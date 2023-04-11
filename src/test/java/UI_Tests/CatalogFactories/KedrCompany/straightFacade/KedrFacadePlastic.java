@@ -93,7 +93,7 @@ public class KedrFacadePlastic {
 
     /*Перейти в корзину*/
     public void goToBasketClick() {
-        goToBasket.shouldBe(Condition.exist, Duration.ofSeconds(30));
+        goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30));
         Selenide.executeJavaScript("arguments[0].click()", goToBasket);
     }
 

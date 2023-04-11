@@ -1,7 +1,6 @@
 package UI_Tests.test.Standart;
 
 import FrameWork.DriversConfiguration.ConfigurationForTest;
-import UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlastic;
 import UI_Tests.CatalogFactories.StandartCompany.StandartFacadePvh;
 import UI_Tests.LoginAndNavigation.FdmLoginPage;
 import org.testng.annotations.Test;

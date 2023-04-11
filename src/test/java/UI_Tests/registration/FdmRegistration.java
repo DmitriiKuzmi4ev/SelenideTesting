@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide.*;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.executeJavaScript;
 
 public class FdmRegistration {
     private static final String LAST_NAME = "Тестировщик";
@@ -14,7 +15,7 @@ public class FdmRegistration {
     private static final String TEST_EMAIL = "aaaaa@gmail.com";
 
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
-    private final SelenideElement registration = $x("//a[contains(@href, \"/personal/registration\")]");
+    private final SelenideElement registration = $x("//div[(@class=\"g-icon-text\")]//ancestor::a[(@href=\"/personal/registration\")]");
     private final SelenideElement lastname = $x("//input[contains(@id, \"user_profile_lastname\")]");
     private final SelenideElement name = $x("//input[contains(@id, \"user_profile_name\")]");
     private final SelenideElement patronymic = $x("//input[contains(@id, \"user_profile_patronymic\")]");
@@ -31,7 +32,7 @@ public class FdmRegistration {
     }
     /*Регистрация*/
     public void registrationClick() {
-        registration.shouldBe(Condition.enabled).click();
+        executeJavaScript("arguments[0].click()", registration);
     }
     /*Фамилия*/
     public void insertLastName() {

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class FdmFeedBackFormTest extends ConfigurationForTest {
 
 
-    @Test(testName = "Тест - Проверка формы обратной связи", priority = 1)
+    @Test(testName = "Тест - Проверка формы обратной связи", priority = 5)
     public void fdmFeedBackFormTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();

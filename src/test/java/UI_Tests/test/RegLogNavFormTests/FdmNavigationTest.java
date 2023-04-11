@@ -6,7 +6,7 @@ import UI_Tests.LoginAndNavigation.FdmNavigation;
 import org.testng.annotations.Test;
 
 public class FdmNavigationTest extends ConfigurationForTest {
-    @Test(testName = "Тест - Проверка навигации на сайте", priority = 1)
+    @Test(testName = "Тест - Проверка навигации на сайте", priority = 3)
     public void fdmNavigationTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();

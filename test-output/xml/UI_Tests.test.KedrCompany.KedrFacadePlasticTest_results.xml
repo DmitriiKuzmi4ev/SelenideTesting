@@ -4,21 +4,21 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="84,198">
+           time="70,763">
   <properties />
-            <testcase name="kedrPlasticTest" time="84,198" classname="UI_Tests.test.KedrCompany.KedrFacadePlasticTest">
+            <testcase name="kedrPlasticTest" time="70,763" classname="UI_Tests.test.KedrCompany.KedrFacadePlasticTest">
                 <failure type="com.codeborne.selenide.ex.ElementNotFound"
-                  message="Element not found {By.xpath: //a[@class=&apos;btn btn-lg btn-success w-100 in-basket mb-4 &apos;]}
-Expected: enabled
-Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681215196621.1.html
-Timeout: 40 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;btn btn-lg btn-success w-100 in-basket mb-4 &apos;]&quot;}"
+                  message="Element not found {By.xpath: //div[(@class=&quot;card-body&quot;)]//ancestor::a[(@href=&quot;/main/basket/&quot;)]}
+Expected: exist
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681217215723.0.html
+Timeout: 30 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[(@class=&quot;card-body&quot;)]//ancestor::a[(@href=&quot;/main/basket/&quot;)]&quot;}"
               >
-<![CDATA[Element not found {By.xpath: //a[@class='btn btn-lg btn-success w-100 in-basket mb-4 ']}
-Expected: enabled
-Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681215196621.1.html
-Timeout: 40 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-lg btn-success w-100 in-basket mb-4 ']"}
+<![CDATA[Element not found {By.xpath: //div[(@class="card-body")]//ancestor::a[(@href="/main/basket/")]}
+Expected: exist
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681217215723.0.html
+Timeout: 30 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[(@class="card-body")]//ancestor::a[(@href="/main/basket/")]"}
   com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:88)
   com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
   com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:140)
@@ -30,7 +30,7 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {"
   com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
   com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
   jdk.proxy2/jdk.proxy2.$Proxy12.shouldBe(Unknown Source)
-  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlastic.goToBasketClick(KedrFacadePlastic.java:97)
+  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlastic.goToBasketClick(KedrFacadePlastic.java:96)
   UI_Tests.test.KedrCompany.KedrFacadePlasticTest.kedrPlasticTest(KedrFacadePlasticTest.java:33)
   java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
   java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -52,15 +52,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {"
   java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
   java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
   java.base/java.lang.Thread.run(Thread.java:1589)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-lg btn-success w-100 in-basket mb-4 ']"}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[(@class="card-body")]//ancestor::a[(@href="/main/basket/")]"}
   (Session info: chrome=111.0.5563.65)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [589972a6ad3d399f2d245a1076499278, findElement {using=xpath, value=//a[@class='btn btn-lg btn-success w-100 in-basket mb-4 ']}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58687}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58687/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 589972a6ad3d399f2d245a1076499278
+Command: [86f8007e53967186ad97b94896f44fb7, findElement {using=xpath, value=//div[(@class="card-body")]//ancestor::a[(@href="/main/basket/")]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63980/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86f8007e53967186ad97b94896f44fb7
   java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
   java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
   java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -87,7 +87,7 @@ Session ID: 589972a6ad3d399f2d245a1076499278
   com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
   com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
   jdk.proxy2/jdk.proxy2.$Proxy12.shouldBe(Unknown Source)
-  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlastic.goToBasketClick(KedrFacadePlastic.java:97)
+  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrFacadePlastic.goToBasketClick(KedrFacadePlastic.java:96)
   UI_Tests.test.KedrCompany.KedrFacadePlasticTest.kedrPlasticTest(KedrFacadePlasticTest.java:33)
   java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
   java.base/java.lang.reflect.Method.invoke(Method.java:578)

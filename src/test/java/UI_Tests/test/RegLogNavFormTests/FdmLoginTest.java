@@ -10,6 +10,7 @@ public class FdmLoginTest extends ConfigurationForTest {
     public void logInTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
+        fdmLoginPage.catalogClick();
         fdmLoginPage.clickEnter();
         fdmLoginPage.insertNumber();
         fdmLoginPage.clickEntering();

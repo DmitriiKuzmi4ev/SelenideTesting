@@ -11,6 +11,7 @@ public class KedrFacadePlasticTest extends ConfigurationForTest {
     public void kedrPlasticTest() {
         FdmLoginPage fdmLoginPage = new FdmLoginPage();
         fdmLoginPage.applyCity();
+        fdmLoginPage.catalogClick();
         fdmLoginPage.clickEnter();
         fdmLoginPage.insertNumber();
         fdmLoginPage.clickEntering();

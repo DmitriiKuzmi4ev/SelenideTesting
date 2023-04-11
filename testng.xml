@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="4" parallel="tests" name="FDM_UI_regression_Tests">
-<!--    <test name="Проверка оформления заказов по компании Кедр" verbose="10">-->
-<!--        <classes>-->
+    <test name="Проверка оформления заказов по компании Кедр" verbose="10">
+        <classes>
 <!--            <class name="UI_Tests.test.KedrCompany.KedrAluminiumSilverTest"/>-->
 <!--            <class name="UI_Tests.test.KedrCompany.KedrAluminiumSlimTest"/>-->
 <!--            <class name="UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest"/>-->
 <!--            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeSelectTest"/>-->
 <!--            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeTest"/>-->
-<!--            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticTest"/>-->
-<!--            <class name="UI_Tests.test.KedrCompany.KedrPlasticSelectsTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticTest"/>
+            <class name="UI_Tests.test.KedrCompany.KedrPlasticSelectsTest"/>
+        </classes>
+    </test>
     <test name="Регистрация и авторизация" verbose="10">
         <classes>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest"/>

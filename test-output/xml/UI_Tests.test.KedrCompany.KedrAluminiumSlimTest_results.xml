@@ -1,13 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Проверка оформления заказов по компании Кедр"
            tests="1"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="63,251">
+           time="72,411">
   <properties />
+            <testcase name="kedrAluminiumSlimTest" time="72,411" classname="UI_Tests.test.KedrCompany.KedrAluminiumSlimTest">
+                <failure type="com.codeborne.selenide.ex.UIAssertionError"
+                  message="TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681195070985.2.html
+Timeout: 40 s.
+Caused by: TimeoutException: timeout: Timed out receiving message from renderer: 30.000"
+              >
+<![CDATA[TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681195070985.2.html
+Timeout: 40 s.
+Caused by: TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  com.codeborne.selenide.ex.UIAssertionError.wrapToUIAssertionError(UIAssertionError.java:125)
+  com.codeborne.selenide.ex.UIAssertionError.wrapThrowable(UIAssertionError.java:108)
+  com.codeborne.selenide.ex.UIAssertionError.wrap(UIAssertionError.java:102)
+  com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:94)
+  jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrAluminiumSlim.goToBasketClick(KedrAluminiumSlim.java:96)
+  UI_Tests.test.KedrCompany.KedrAluminiumSlimTest.kedrAluminiumSlimTest(KedrAluminiumSlimTest.java:33)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:829)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a52c70bdd88203d0452bbf1d1de388a1, clickElement {id=35b5d18a-9d70-40e2-9b26-a9c41888dd0a}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63116/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a52c70bdd88203d0452bbf1d1de388a1)] -> xpath: //div[(@class="card-body")]//ancestor::a[(@href="/main/basket/")]]
+Session ID: a52c70bdd88203d0452bbf1d1de388a1
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+  com.codeborne.selenide.commands.Click.defaultClick(Click.java:97)
+  com.codeborne.selenide.commands.Click.click(Click.java:54)
+  com.codeborne.selenide.commands.Click.execute(Click.java:31)
+  com.codeborne.selenide.commands.Click.execute(Click.java:21)
+  com.codeborne.selenide.commands.Commands.execute(Commands.java:159)
+  com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+  com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+  jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrAluminiumSlim.goToBasketClick(KedrAluminiumSlim.java:96)
+  UI_Tests.test.KedrCompany.KedrAluminiumSlimTest.kedrAluminiumSlimTest(KedrAluminiumSlimTest.java:33)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:829)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="kedrAluminiumSlimTest" time="63,251" classname="UI_Tests.test.KedrCompany.KedrAluminiumSlimTest" />
-      
+  
 </testsuite>

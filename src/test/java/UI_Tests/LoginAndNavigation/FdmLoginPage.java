@@ -32,7 +32,7 @@ public class FdmLoginPage {
     }
     /*Кнопка - Вход (на главной)*/
     public void clickEnter() {
-        enterBase.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        enterBase.shouldBe(Condition.enabled, Duration.ofSeconds(30)).hover().click();
     }
 
     /*Ввод номер телефона (зарегестрированного)*/

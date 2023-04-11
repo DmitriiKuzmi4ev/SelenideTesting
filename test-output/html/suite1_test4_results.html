@@ -3,16 +3,16 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Навигация на сайте и ссылки</title>
+  <title>Test Results Report - Форма обратной связи</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Навигация на сайте и ссылки</h1>
+<h1>Форма обратной связи</h1>
 <p>
-  Test duration: 50,331s
+  Test duration: 46,550s
 </p>
 
 
@@ -20,32 +20,32 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">UI_Tests.test.RegLogNavFormTests.FdmNavigationTest</td>
+        <td colspan="3" class="group">UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  fdmNavigationTest
+                  fdmFeedBackFormTest
       </td>
   <td class="duration">
-    40,923s
+    41,164s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>Invalid element state [By.xpath: //a[(@class=&quot;header__link nav__link nav__link--arrow &quot;)]]: element click intercepted: Element &lt;a href=&quot;/main/factory/select-factory/&quot; class=&quot;header__link nav__link nav__link--arrow &quot;&gt;...&lt;/a&gt; is not clickable at point (782, 42). Other element would receive the click: &lt;div class=&quot;modal-body form-container&quot;&gt;...&lt;/div&gt;<br/>
-Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681213037595.0.html<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>Invalid element state [By.xpath: //a[(@data-link=&quot;/personal/login_modal&quot;)]]: element click intercepted: Element &lt;a href=&quot;#&quot; class=&quot;header__user-links&quot; data-link=&quot;/personal/login_modal&quot; data-toggle=&quot;modal&quot; data-target=&quot;#auth-modal&quot; onclick=&quot;yaCounter71314582.reachGoal(&apos;vkhod_shapka&apos;); return true;&quot;&gt;...&lt;/a&gt; is not clickable at point (1221, 41). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;select-city-modal&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;select-city-modal&quot; aria-modal=&quot;true&quot; role=&quot;dialog&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;<br/>
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681215152527.0.html<br/>
 Timeout: 40 s.<br/>
-Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/main/factory/select-factory/&quot; class=&quot;header__link nav__link nav__link--arrow &quot;&gt;...&lt;/a&gt; is not clickable at point (782, 42). Other element would receive the click: &lt;div class=&quot;modal-body form-container&quot;&gt;...&lt;/div&gt;</b></a><br />
+Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot; class=&quot;header__user-links&quot; data-link=&quot;/personal/login_modal&quot; data-toggle=&quot;modal&quot; data-target=&quot;#auth-modal&quot; onclick=&quot;yaCounter71314582.reachGoal(&apos;vkhod_shapka&apos;); return true;&quot;&gt;...&lt;/a&gt; is not clickable at point (1221, 41). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;select-city-modal&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;select-city-modal&quot; aria-modal=&quot;true&quot; role=&quot;dialog&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;</b></a><br />
     <div class="stackTrace" id="exception-0">
               com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:26)<br />
               com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:154)<br />
               com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)<br />
               jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)<br />
-              UI_Tests.LoginAndNavigation.FdmLoginPage.catalogClick(FdmLoginPage.java:29)<br />
-              UI_Tests.test.RegLogNavFormTests.FdmNavigationTest.fdmNavigationTest(FdmNavigationTest.java:13)<br />
+              UI_Tests.LoginAndNavigation.FdmLoginPage.clickEnter(FdmLoginPage.java:35)<br />
+              UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest.fdmFeedBackFormTest(FdmFeedBackFormTest.java:15)<br />
               java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
               java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
               org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
@@ -66,15 +66,15 @@ Caused by: ElementClickInterceptedException: element click intercepted: Element 
               java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
               java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
               java.base/java.lang.Thread.run(Thread.java:1589)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/main/factory/select-factory/&quot; class=&quot;header__link nav__link nav__link--arrow &quot;&gt;...&lt;/a&gt; is not clickable at point (782, 42). Other element would receive the click: &lt;div class=&quot;modal-body form-container&quot;&gt;...&lt;/div&gt;<br/>
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot; class=&quot;header__user-links&quot; data-link=&quot;/personal/login_modal&quot; data-toggle=&quot;modal&quot; data-target=&quot;#auth-modal&quot; onclick=&quot;yaCounter71314582.reachGoal(&apos;vkhod_shapka&apos;); return true;&quot;&gt;...&lt;/a&gt; is not clickable at point (1221, 41). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;select-city-modal&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;select-city-modal&quot; aria-modal=&quot;true&quot; role=&quot;dialog&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;<br/>
 &nbsp; (Session info: chrome=111.0.5563.65)<br/>
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;<br/>
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Command: [21fc779fe74d662a31e442bfba2e588a, clickElement {id=3f8afa40-0364-4926-a3c5-6f678c44effa}]<br/>
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52220/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
-Element: [[ChromeDriver: chrome on WINDOWS (21fc779fe74d662a31e442bfba2e588a)] -&gt; xpath: //a[(@class=&quot;header__link nav__link nav__link--arrow &quot;)]]<br/>
-Session ID: 21fc779fe74d662a31e442bfba2e588a</a><br />
+Command: [57b50ceb3605cb66823fb0e3e9bdf7f4, clickElement {id=0609aa0c-4bef-428e-8a96-05adb8532c15}]<br/>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58695/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Element: [[ChromeDriver: chrome on WINDOWS (57b50ceb3605cb66823fb0e3e9bdf7f4)] -&gt; xpath: //a[(@data-link=&quot;/personal/login_modal&quot;)]]<br/>
+Session ID: 57b50ceb3605cb66823fb0e3e9bdf7f4</a><br />
         <div class="stackTrace" id="exception-1">
                       java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
                       java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
@@ -96,8 +96,8 @@ Session ID: 21fc779fe74d662a31e442bfba2e588a</a><br />
                       com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)<br />
                       com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)<br />
                       jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)<br />
-                      UI_Tests.LoginAndNavigation.FdmLoginPage.catalogClick(FdmLoginPage.java:29)<br />
-                      UI_Tests.test.RegLogNavFormTests.FdmNavigationTest.fdmNavigationTest(FdmNavigationTest.java:13)<br />
+                      UI_Tests.LoginAndNavigation.FdmLoginPage.clickEnter(FdmLoginPage.java:35)<br />
+                      UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest.fdmFeedBackFormTest(FdmFeedBackFormTest.java:15)<br />
                       java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
                       java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
                       org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
@@ -125,27 +125,6 @@ Session ID: 21fc779fe74d662a31e442bfba2e588a</a><br />
       </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">UI_Tests.test.RegLogNavFormTests.FdmLinksTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  fdmLinksTest
-      </td>
-  <td class="duration">
-    3,294s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-      </table>
   
 </body>
 </html>

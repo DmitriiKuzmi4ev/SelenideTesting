@@ -1,13 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Форма обратной связи"
            tests="1"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="4,707">
+           time="41,164">
   <properties />
+            <testcase name="fdmFeedBackFormTest" time="41,164" classname="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest">
+                <failure type="com.codeborne.selenide.ex.InvalidStateException"
+                  message="Invalid element state [By.xpath: //a[(@data-link=&quot;/personal/login_modal&quot;)]]: element click intercepted: Element &lt;a href=&quot;#&quot; class=&quot;header__user-links&quot; data-link=&quot;/personal/login_modal&quot; data-toggle=&quot;modal&quot; data-target=&quot;#auth-modal&quot; onclick=&quot;yaCounter71314582.reachGoal(&apos;vkhod_shapka&apos;); return true;&quot;&gt;...&lt;/a&gt; is not clickable at point (1221, 41). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;select-city-modal&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;select-city-modal&quot; aria-modal=&quot;true&quot; role=&quot;dialog&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681215152527.0.html
+Timeout: 40 s.
+Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot; class=&quot;header__user-links&quot; data-link=&quot;/personal/login_modal&quot; data-toggle=&quot;modal&quot; data-target=&quot;#auth-modal&quot; onclick=&quot;yaCounter71314582.reachGoal(&apos;vkhod_shapka&apos;); return true;&quot;&gt;...&lt;/a&gt; is not clickable at point (1221, 41). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;select-city-modal&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;select-city-modal&quot; aria-modal=&quot;true&quot; role=&quot;dialog&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;"
+              >
+<![CDATA[Invalid element state [By.xpath: //a[(@data-link="/personal/login_modal")]]: element click intercepted: Element <a href="#" class="header__user-links" data-link="/personal/login_modal" data-toggle="modal" data-target="#auth-modal" onclick="yaCounter71314582.reachGoal('vkhod_shapka'); return true;">...</a> is not clickable at point (1221, 41). Other element would receive the click: <div class="modal fade show" id="select-city-modal" tabindex="-1" aria-labelledby="select-city-modal" aria-modal="true" role="dialog" style="display: block;">...</div>
+Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681215152527.0.html
+Timeout: 40 s.
+Caused by: ElementClickInterceptedException: element click intercepted: Element <a href="#" class="header__user-links" data-link="/personal/login_modal" data-toggle="modal" data-target="#auth-modal" onclick="yaCounter71314582.reachGoal('vkhod_shapka'); return true;">...</a> is not clickable at point (1221, 41). Other element would receive the click: <div class="modal fade show" id="select-city-modal" tabindex="-1" aria-labelledby="select-city-modal" aria-modal="true" role="dialog" style="display: block;">...</div>
+  com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:26)
+  com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:154)
+  com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+  jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+  UI_Tests.LoginAndNavigation.FdmLoginPage.clickEnter(FdmLoginPage.java:35)
+  UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest.fdmFeedBackFormTest(FdmFeedBackFormTest.java:15)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:829)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="header__user-links" data-link="/personal/login_modal" data-toggle="modal" data-target="#auth-modal" onclick="yaCounter71314582.reachGoal('vkhod_shapka'); return true;">...</a> is not clickable at point (1221, 41). Other element would receive the click: <div class="modal fade show" id="select-city-modal" tabindex="-1" aria-labelledby="select-city-modal" aria-modal="true" role="dialog" style="display: block;">...</div>
+  (Session info: chrome=111.0.5563.65)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [57b50ceb3605cb66823fb0e3e9bdf7f4, clickElement {id=0609aa0c-4bef-428e-8a96-05adb8532c15}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\D13CB~1.KUZ\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58695/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (57b50ceb3605cb66823fb0e3e9bdf7f4)] -> xpath: //a[(@data-link="/personal/login_modal")]]
+Session ID: 57b50ceb3605cb66823fb0e3e9bdf7f4
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+  com.codeborne.selenide.commands.Click.defaultClick(Click.java:97)
+  com.codeborne.selenide.commands.Click.click(Click.java:54)
+  com.codeborne.selenide.commands.Click.execute(Click.java:31)
+  com.codeborne.selenide.commands.Click.execute(Click.java:21)
+  com.codeborne.selenide.commands.Commands.execute(Commands.java:159)
+  com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+  com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+  jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+  UI_Tests.LoginAndNavigation.FdmLoginPage.clickEnter(FdmLoginPage.java:35)
+  UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest.fdmFeedBackFormTest(FdmFeedBackFormTest.java:15)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:829)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="fdmFeedBackFormTest" time="4,707" classname="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest" />
-      
+  
 </testsuite>

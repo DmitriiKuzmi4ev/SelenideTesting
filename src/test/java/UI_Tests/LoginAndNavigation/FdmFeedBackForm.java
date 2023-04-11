@@ -2,7 +2,6 @@ package UI_Tests.LoginAndNavigation;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import org.testng.Assert;
 
 import static com.codeborne.selenide.Selenide.$x;
 

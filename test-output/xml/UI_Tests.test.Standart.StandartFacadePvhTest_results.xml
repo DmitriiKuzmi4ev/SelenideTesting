@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Проверка оформления заказа по компании Стандарт"
+<testsuite name="SelenideTestingNew"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="33,123">
+           time="25,009">
   <properties />
   
   
-            <testcase name="standartFacadePvhTest" time="33,123" classname="UI_Tests.test.Standart.StandartFacadePvhTest" />
+            <testcase name="standartFacadePvhTest" time="25,009" classname="UI_Tests.test.Standart.StandartFacadePvhTest" />
       
 </testsuite>

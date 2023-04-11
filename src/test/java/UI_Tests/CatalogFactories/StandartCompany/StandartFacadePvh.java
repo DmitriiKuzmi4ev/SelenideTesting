@@ -111,6 +111,7 @@ public class StandartFacadePvh {
 
     /*Перейти в корзину*/
     public void goToBasketClick() {
+        Selenide.refresh();
         goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 

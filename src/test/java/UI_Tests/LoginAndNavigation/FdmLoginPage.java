@@ -26,6 +26,7 @@ public class FdmLoginPage {
     }
     /*Каталог*/
     public void catalogClick() {
+        Selenide.refresh();
         catalog.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         Selenide.back();
     }

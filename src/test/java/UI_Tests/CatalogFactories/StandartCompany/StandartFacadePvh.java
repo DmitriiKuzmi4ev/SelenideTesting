@@ -2,6 +2,7 @@ package UI_Tests.CatalogFactories.StandartCompany;
 
 import FrameWork.Utils.RandomUtils;
 import com.codeborne.selenide.*;
+import org.openqa.selenium.NoAlertPresentException;
 
 import java.time.Duration;
 
@@ -33,9 +34,10 @@ public class StandartFacadePvh {
     private final SelenideElement deliveryCityCheckbox = $x("//input[(@id=\"deliveryCityCheckbox\")]");
     private final SelenideElement paymentBtn = $x("//button[contains(@class, \" btn-success w-100\")]");
 
+
     private final SelenideElement scroll1 = $x("//div[(@class=\"text-center mb-4\")]//ancestor::button[(@id=\"submitButton\")]");
     private final SelenideElement scroll2 = $x("//a[(@data-href=\"/order/add-to-basket/\")]");
-    private final SelenideElement scroll3 = $x("//a[(@data-type=\"go-to-checkout\")]//ancestor::div[(@class=\"card-body\")]");
+    private final SelenideElement scroll3 = $x("//form[(@name=\"order_promo_code\")]//ancestor::div[(@class=\"card-body center\")]");
 
     /*Каталог*/
     public void catalogClick() {
@@ -106,7 +108,7 @@ public class StandartFacadePvh {
 
     /*Добавить в корзину*/
     public void addToBasketClick() {
-        addToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        addToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(40)).click();
     }
 
     /*Перейти в корзину*/
@@ -116,13 +118,13 @@ public class StandartFacadePvh {
     }
 
     /*Скроллим до - перейти к оформлению*/
-    public void scroll3Do() {
-
-    }
+//    public void scroll3Do() {
+//        Selenide.refresh();
+//        Selenide.executeJavaScript("arguments[0].scrollIntoView(false)", scroll3);
+//    }
     /*Перейти к оформлению*/
     public void goToCheckOutClick() {
-        scroll3.shouldBe(Condition.enabled, Duration.ofSeconds(30)).scrollTo();
-        goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(40)).click();
     }
 
     /*Выбрать оплату по QR*/

@@ -20,6 +20,12 @@ public class FdmLoginPage {
     private final SelenideElement codeInput = $x("//*[@id=\"codeInput\"]");
     private final SelenideElement mainEnter = $x("//*[@id=\"auth-modal\"]/div/div/div/form[1]/div[2]/button");
 
+    private final SelenideElement orders = $x("//a[(@href=\"/orders\")]");
+    private final SelenideElement basket = $x("//ul[(@class=\"personal-block-nav\")]//ancestor::a[(@href=\"/main/basket/\")]");
+    private final SelenideElement scrollToClear = $x("//a[(@data-href=\"/main/basket/1075/clear\")]");
+    private final SelenideElement backToMain = $x("//a[(@href=\"/\")]");
+
+
     /*Город выбран верно*/
     public void applyCity() {
         applyCity.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
@@ -55,6 +61,26 @@ public class FdmLoginPage {
         mainEnter.shouldBe(Condition.enabled).hover().click();
     }
 
+    /*Кнопка - Заказы*/
+    public void ordersClick() {
+        orders.shouldBe(Condition.enabled).click();
+    }
+    /*Кнопка - Корзина*/
+    public void basketClick() {
+        basket.shouldBe(Condition.enabled).click();
+    }
+    /*Скролл к очистке*/
+    public void scrollToClearDo() {
+        if (scrollToClear.isDisplayed()) {
+            System.out.println("Необходимо очистить корзину");
+            scrollToClear.scrollTo();
+            scrollToClear.shouldBe(Condition.enabled).click();
+        } else {
+            System.out.println("Корзина пуста.");
+            backToMain.shouldBe(Condition.enabled).click();
+        }
+
+    }
 }
 
 

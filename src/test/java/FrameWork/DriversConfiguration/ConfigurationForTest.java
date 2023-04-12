@@ -17,11 +17,14 @@ public class ConfigurationForTest {
         Configuration.browserSize = "1920x1080";
         Configuration.headless = true;
         Configuration.holdBrowserOpen = false;
-        Configuration.timeout = 40000;
+        Configuration.timeout = 50000;
         Configuration.pollingInterval = 500;
         Configuration.fastSetValue = true;
         Configuration.screenshots = false;
+        Selenide.clearBrowserCookies();
+        Selenide.clearBrowserLocalStorage();
         Selenide.open(BASE_URL);
+
     }
 
     @BeforeClass

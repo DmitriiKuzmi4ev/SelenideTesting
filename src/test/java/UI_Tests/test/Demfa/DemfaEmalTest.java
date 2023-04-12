@@ -18,6 +18,10 @@ public class DemfaEmalTest extends ConfigurationForTest {
         fdmLoginPage.insertCode();
         fdmLoginPage.clickMainEnter();
 
+        fdmLoginPage.ordersClick();
+        fdmLoginPage.basketClick();
+        fdmLoginPage.scrollToClearDo();
+
         DemfaEmal demfaEmal = new DemfaEmal();
         demfaEmal.catalogClick();
         demfaEmal.demfaClick();
@@ -34,7 +38,7 @@ public class DemfaEmalTest extends ConfigurationForTest {
         demfaEmal.scroll2Do();
         demfaEmal.addToBasketClick();
         demfaEmal.goToBasketClick();
-        demfaEmal.scroll3Do();
+//        demfaEmal.scroll3Do();
         demfaEmal.goToCheckOutClick();
         demfaEmal.qrCodeClick();
         demfaEmal.deliveryCityClick();

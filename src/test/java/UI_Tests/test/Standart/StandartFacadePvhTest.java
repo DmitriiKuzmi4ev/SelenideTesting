@@ -18,6 +18,10 @@ public class StandartFacadePvhTest extends ConfigurationForTest {
         fdmLoginPage.insertCode();
         fdmLoginPage.clickMainEnter();
 
+        fdmLoginPage.ordersClick();
+        fdmLoginPage.basketClick();
+        fdmLoginPage.scrollToClearDo();
+
         StandartFacadePvh standartFacadePvh = new StandartFacadePvh();
         standartFacadePvh.catalogClick();
         standartFacadePvh.standartClick();
@@ -34,7 +38,7 @@ public class StandartFacadePvhTest extends ConfigurationForTest {
         standartFacadePvh.scroll2Do();
         standartFacadePvh.addToBasketClick();
         standartFacadePvh.goToBasketClick();
-        standartFacadePvh.scroll3Do();
+//        standartFacadePvh.scroll3Do();
         standartFacadePvh.goToCheckOutClick();
         standartFacadePvh.qrCodeClick();
         standartFacadePvh.deliveryCityClick();

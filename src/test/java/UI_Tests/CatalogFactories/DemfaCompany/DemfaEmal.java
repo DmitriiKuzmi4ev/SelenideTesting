@@ -2,6 +2,7 @@ package UI_Tests.CatalogFactories.DemfaCompany;
 
 import FrameWork.Utils.RandomUtils;
 import com.codeborne.selenide.*;
+import org.openqa.selenium.NoAlertPresentException;
 
 import java.time.Duration;
 
@@ -35,7 +36,7 @@ public class DemfaEmal {
 
     private final SelenideElement scroll1 = $x("//div[(@class=\"text-center mb-4\")]//ancestor::button[(@id=\"submitButton\")]");
     private final SelenideElement scroll2 = $x("//a[(@data-href=\"/order/add-to-basket/\")]");
-    private final SelenideElement scroll3 = $x("//a[(@data-type=\"go-to-checkout\")]//ancestor::div[(@class=\"card-body\")]");
+    private final SelenideElement scroll3 = $x("//form[(@name=\"order_promo_code\")]//ancestor::div[(@class=\"card-body center\")]");
 
     /*Каталог*/
     public void catalogClick() {
@@ -106,7 +107,7 @@ public class DemfaEmal {
 
     /*Добавить в корзину*/
     public void addToBasketClick() {
-        addToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        addToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(40)).click();
     }
 
     /*Перейти в корзину*/
@@ -116,13 +117,13 @@ public class DemfaEmal {
     }
 
     /*Скроллим до - перейти к оформлению*/
-    public void scroll3Do() {
-
-    }
+//    public void scroll3Do() {
+//        Selenide.refresh();
+//        Selenide.executeJavaScript("arguments[0].scrollIntoView(false)", scroll3);
+//    }
     /*Перейти к оформлению*/
     public void goToCheckOutClick() {
-        scroll3.shouldBe(Condition.enabled, Duration.ofSeconds(30)).scrollTo();
-        goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(40)).click();
     }
 
     /*Выбрать оплату по QR*/

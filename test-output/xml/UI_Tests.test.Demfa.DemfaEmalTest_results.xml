@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="36,233">
+           time="39,497">
   <properties />
   
   
-            <testcase name="standartFacadePvhTest" time="36,233" classname="UI_Tests.test.Demfa.DemfaEmalTest" />
+            <testcase name="standartFacadePvhTest" time="39,497" classname="UI_Tests.test.Demfa.DemfaEmalTest" />
       
 </testsuite>

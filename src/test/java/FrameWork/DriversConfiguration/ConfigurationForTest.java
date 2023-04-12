@@ -22,8 +22,8 @@ public class ConfigurationForTest {
         Configuration.fastSetValue = true;
         Configuration.screenshots = false;
         Selenide.clearBrowserCookies();
-        Selenide.clearBrowserLocalStorage();
         Selenide.open(BASE_URL);
+        Selenide.clearBrowserLocalStorage();
 
     }
 

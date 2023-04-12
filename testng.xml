@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="5" parallel="tests" name="FDM_UI_regression_Tests">
-<!--    <test name="001 - Регистрация и авторизация" verbose="10">-->
-<!--        <classes>-->
-<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest"/>-->
-<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmLoginTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="002 - Навигация на сайте и ссылки" verbose="10">-->
-<!--        <classes>-->
-<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmLinksTest"/>-->
-<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="003 - Форма обратной связи" verbose="10">-->
-<!--        <classes>-->
-<!--            <class name="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="004 - Проверка оформления заказа по компании Кедр" verbose="10">-->
-<!--        <classes>-->
-<!--            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="001 - Регистрация и авторизация" verbose="10">
+        <classes>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest"/>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmLoginTest"/>
+        </classes>
+    </test>
+    <test name="002 - Навигация на сайте и ссылки" verbose="10">
+        <classes>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmLinksTest"/>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmNavigationTest"/>
+        </classes>
+    </test>
+    <test name="003 - Форма обратной связи" verbose="10">
+        <classes>
+            <class name="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest"/>
+        </classes>
+    </test>
+    <test name="004 - Проверка оформления заказа по компании Кедр" verbose="10">
+        <classes>
+            <class name="UI_Tests.test.KedrCompany.KedrFacadePlasticTest"/>
+        </classes>
+    </test>
     <test name="005 - Проверка оформления заказа по компании Стандарт" verbose="10">
         <classes>
             <class name="UI_Tests.test.Standart.StandartFacadePvhTest"/>

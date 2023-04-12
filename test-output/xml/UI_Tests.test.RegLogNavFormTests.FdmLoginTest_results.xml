@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SelenideTestingNew"
+<testsuite name="001 - Регистрация и авторизация"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="6,927">
+           time="13,588">
   <properties />
   
   
-            <testcase name="checkedBasket" time="1,451" classname="UI_Tests.test.RegLogNavFormTests.FdmLoginTest" />
-                <testcase name="logInTest" time="5,476" classname="UI_Tests.test.RegLogNavFormTests.FdmLoginTest" />
+            <testcase name="checkedBasket" time="3,514" classname="UI_Tests.test.RegLogNavFormTests.FdmLoginTest" />
+                <testcase name="logInTest" time="10,074" classname="UI_Tests.test.RegLogNavFormTests.FdmLoginTest" />
       
 </testsuite>

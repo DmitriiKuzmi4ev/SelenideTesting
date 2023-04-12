@@ -38,7 +38,6 @@ public class StandartFacadePvhTest extends ConfigurationForTest {
         standartFacadePvh.scroll2Do();
         standartFacadePvh.addToBasketClick();
         standartFacadePvh.goToBasketClick();
-//        standartFacadePvh.scroll3Do();
         standartFacadePvh.goToCheckOutClick();
         standartFacadePvh.qrCodeClick();
         standartFacadePvh.deliveryCityClick();

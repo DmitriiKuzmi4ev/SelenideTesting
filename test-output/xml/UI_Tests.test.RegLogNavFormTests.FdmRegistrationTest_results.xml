@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1,703">
+           time="1,482">
   <properties />
   
   
-            <testcase name="fdmRegistrationTest" time="1,703" classname="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest" />
+            <testcase name="fdmRegistrationTest" time="1,482" classname="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest" />
       
 </testsuite>

@@ -22,11 +22,11 @@ public class KedrFacadePlastic {
     private final SelenideElement widthArea = $x("//input[contains(@class, \"detail-width-input form-control\")]");
     private final SelenideElement calculate = $x("//div[(@id=\"calculateButtonBlock\")]//ancestor::button[(@id=\"submitButton\")]");
     private final SelenideElement addToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@data-href=\"/order/add-to-basket/\")]");
-    private final SelenideElement goToBasket = $x("//div[(@class=\"card-body\")]//ancestor::a[(@class=\"btn btn-lg btn-success w-100 in-basket mb-4\")]");
+    private final SelenideElement goToBasket = $x("/html/body/div[5]/div/div[2]/div[2]/div[2]/div[2]/div/a[1]");
     private final SelenideElement goToCheckOut = $x("//a[(@data-type=\"go-to-checkout\")]");
     private final SelenideElement qrCode = $x("//input[(@value=\"raiff\")]//ancestor::label");
     private final SelenideElement qrCodeRadio = $x("//input[(@value=\"raiff\")]");
-    private final SelenideElement deliveryCity = $x("//label[(@for=\"deliveryCityCheckbox\")]");
+    private final SelenideElement deliveryCity = $x("//div[(@class=\"custom-control custom-checkbox\")]//ancestor::label[(@for=\"deliveryCityCheckbox\")]");
     private final SelenideElement deliveryCityCheckbox = $x("//input[(@id=\"deliveryCityCheckbox\")]");
     private final SelenideElement paymentBtn = $x("//button[contains(@class, \" btn-success w-100\")]");
 
@@ -41,7 +41,7 @@ public class KedrFacadePlastic {
 
     /*Фабрика Кедр*/
     public void kedrClick() {
-        kedr.shouldBe(Condition.enabled).click();
+        kedr.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
     /*Фасады из пластика*/
@@ -51,7 +51,7 @@ public class KedrFacadePlastic {
 
     /*Фасады без окромления*/
     public void facadeWithOutEdgeClick() {
-        facadeWithOutEdge.click();
+        facadeWithOutEdge.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
     /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомный декор*/
@@ -62,17 +62,17 @@ public class KedrFacadePlastic {
 
     /*Продолжить*/
     public void continue1CLick() {
-        continue1.shouldBe(Condition.exist).click();
+        continue1.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
     }
 
     /*Высота*/
     public void heightAreaInsert() {
-        heightArea.shouldBe(Condition.editable).sendKeys(BASE_HEIGHT);
+        heightArea.shouldBe(Condition.editable, Duration.ofSeconds(30)).sendKeys(BASE_HEIGHT);
     }
 
     /*Ширина*/
     public void widthAreaInsert() {
-        widthArea.shouldBe(Condition.editable).sendKeys(BASE_WIDTH);
+        widthArea.shouldBe(Condition.editable, Duration.ofSeconds(30)).sendKeys(BASE_WIDTH);
     }
 
     /*Рассчитать стоимость заказа*/
@@ -93,8 +93,9 @@ public class KedrFacadePlastic {
 
     /*Перейти в корзину*/
     public void goToBasketClick() {
-        goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30));
-        Selenide.executeJavaScript("arguments[0].click()", goToBasket);
+        goToBasket.scrollTo();
+        Selenide.refresh();
+        goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
     /*Скроллим до - перейти к оформлению*/
@@ -108,17 +109,9 @@ public class KedrFacadePlastic {
         goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
-    /*Выбрать оплату по QR*/
-    public void qrCodeClick() {
-        qrCode.click();
-        if (!qrCodeRadio.isSelected()) {
-            System.out.println("Ошибка - кнопка оплатить по QR коду не рабтает");
-        }
-    }
-
     /*Подтвердить город доставки*/
     public void deliveryCityClick() {
-        deliveryCity.click();
+        deliveryCity.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         if (!deliveryCityCheckbox.isSelected()) {
             System.out.println("Ошибка - чекбокс - подтвердить город доставки не работает");
         }

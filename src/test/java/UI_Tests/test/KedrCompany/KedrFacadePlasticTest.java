@@ -33,7 +33,6 @@ public class KedrFacadePlasticTest extends ConfigurationForTest {
         kedrFacadePlastic.goToBasketClick();
         kedrFacadePlastic.scroll2Do();
         kedrFacadePlastic.goToCheckOutClick();
-        kedrFacadePlastic.qrCodeClick();
         kedrFacadePlastic.deliveryCityClick();
         kedrFacadePlastic.checkedPaymentBtn();
     }

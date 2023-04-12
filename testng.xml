@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="5" parallel="tests" name="FDM_UI_regression_Tests">
+<suite thread-count="1" parallel="tests" name="FDM_UI_regression_Tests">
     <test name="001 - Регистрация и авторизация" verbose="10">
         <classes>
             <class name="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest"/>

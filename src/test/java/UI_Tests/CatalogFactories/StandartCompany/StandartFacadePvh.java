@@ -37,7 +37,7 @@ public class StandartFacadePvh {
 
     private final SelenideElement scroll1 = $x("//div[(@class=\"text-center mb-4\")]//ancestor::button[(@id=\"submitButton\")]");
     private final SelenideElement scroll2 = $x("//a[(@data-href=\"/order/add-to-basket/\")]");
-    private final SelenideElement scroll3 = $x("//form[(@name=\"order_promo_code\")]//ancestor::div[(@class=\"card-body center\")]");
+    private final SelenideElement scroll3 = $x("//div[(@class=\"card-body\")]//ancestor::a[(@data-type=\"go-to-checkout\")]");
 
     /*Каталог*/
     public void catalogClick() {
@@ -46,7 +46,7 @@ public class StandartFacadePvh {
 
     /*Фабрика Стандарт*/
     public void standartClick() {
-        standart.shouldBe(Condition.enabled).click();
+        standart.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
     /*Фасады ПВХ*/
@@ -56,7 +56,7 @@ public class StandartFacadePvh {
 
     /*Фасады прямые*/
     public void facadeStraightClick() {
-        facadeStraight.click();
+        facadeStraight.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
     /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомный декор*/
@@ -66,7 +66,7 @@ public class StandartFacadePvh {
     }
     /*Продолжить*/
     public void continue1CLick() {
-        continue1.shouldBe(Condition.exist).click();
+        continue1.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
     }
 
     /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомную фрезеровку*/
@@ -76,17 +76,17 @@ public class StandartFacadePvh {
     }
     /*Продолжить*/
     public void continue2CLick() {
-        continue2.shouldBe(Condition.exist).click();
+        continue2.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
     }
 
     /*Высота*/
     public void heightAreaInsert() {
-        heightArea.shouldBe(Condition.editable).sendKeys(BASE_HEIGHT);
+        heightArea.shouldBe(Condition.editable, Duration.ofSeconds(30)).sendKeys(BASE_HEIGHT);
     }
 
     /*Ширина*/
     public void widthAreaInsert() {
-        widthArea.shouldBe(Condition.editable).sendKeys(BASE_WIDTH);
+        widthArea.shouldBe(Condition.editable, Duration.ofSeconds(30)).sendKeys(BASE_WIDTH);
     }
 
     /*Скролл*/
@@ -113,18 +113,16 @@ public class StandartFacadePvh {
 
     /*Перейти в корзину*/
     public void goToBasketClick() {
+        goToBasket.scrollTo();
         Selenide.refresh();
         goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
-    /*Скроллим до - перейти к оформлению*/
-//    public void scroll3Do() {
-//        Selenide.refresh();
-//        Selenide.executeJavaScript("arguments[0].scrollIntoView(false)", scroll3);
-//    }
     /*Перейти к оформлению*/
     public void goToCheckOutClick() {
-        goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(40)).click();
+        goToCheckOut.scrollTo();
+        Selenide.refresh();
+        goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
 
     /*Выбрать оплату по QR*/

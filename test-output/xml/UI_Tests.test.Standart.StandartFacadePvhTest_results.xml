@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="39,569">
+           time="30,990">
   <properties />
   
   
-            <testcase name="standartFacadePvhTest" time="39,569" classname="UI_Tests.test.Standart.StandartFacadePvhTest" />
+            <testcase name="standartFacadePvhTest" time="30,990" classname="UI_Tests.test.Standart.StandartFacadePvhTest" />
       
 </testsuite>

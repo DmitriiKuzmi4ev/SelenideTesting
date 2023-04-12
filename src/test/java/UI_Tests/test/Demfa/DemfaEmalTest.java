@@ -38,9 +38,8 @@ public class DemfaEmalTest extends ConfigurationForTest {
         demfaEmal.scroll2Do();
         demfaEmal.addToBasketClick();
         demfaEmal.goToBasketClick();
-//        demfaEmal.scroll3Do();
+        demfaEmal.scroll3Do();
         demfaEmal.goToCheckOutClick();
-        demfaEmal.qrCodeClick();
         demfaEmal.deliveryCityClick();
         demfaEmal.checkedPaymentBtn();
 

@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="standartFacadePvhTest" time="35,972" classname="UI_Tests.test.Demfa.DemfaEmalTest" />
+            <testcase name="standartFacadePvhTest" time="35,972" classname="ui_Tests.test.demfa.DemfaEmalTest" />
       
 </testsuite>

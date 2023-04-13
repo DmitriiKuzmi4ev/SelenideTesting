@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="fdmRegistrationTest" time="1,482" classname="UI_Tests.test.RegLogNavFormTests.FdmRegistrationTest" />
+            <testcase name="fdmRegistrationTest" time="1,482" classname="ui_Tests.test.regLogNavFormTests.FdmRegistrationTest" />
       
 </testsuite>

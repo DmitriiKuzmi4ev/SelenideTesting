@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="kerdFacadePlasticAndEdgeSelectTest" time="35,223" classname="UI_Tests.test.KedrCompany.KedrFacadePlasticAndEdgeSelectTest" />
+            <testcase name="kerdFacadePlasticAndEdgeSelectTest" time="35,223" classname="ui_Tests.test.kedrCompany.KedrFacadePlasticAndEdgeSelectTest" />
       
 </testsuite>

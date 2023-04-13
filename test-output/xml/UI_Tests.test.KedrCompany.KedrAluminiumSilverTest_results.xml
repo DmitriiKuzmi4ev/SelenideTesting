@@ -6,7 +6,7 @@
            skipped="0"
            time="50,052">
   <properties />
-            <testcase name="kedrAluminiumSilverTest" time="50,052" classname="UI_Tests.test.KedrCompany.KedrAluminiumSilverTest">
+            <testcase name="kedrAluminiumSilverTest" time="50,052" classname="ui_Tests.test.kedrCompany.KedrAluminiumSilverTest">
                 <failure type="com.codeborne.selenide.ex.ElementShould"
                   message="Element should be interactable {By.xpath: //*[@id=&quot;exampleModal&quot;]/div/form/div/div[3]/button[2]}
 Element: &apos;&lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot; displayed:false&gt;&lt;/button&gt;&apos;
@@ -29,8 +29,8 @@ Timeout: 40 s.
   com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
   com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
   jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrAluminiumSilver.continue1Click(KedrAluminiumSilver.java:64)
-  UI_Tests.test.KedrCompany.KedrAluminiumSilverTest.kedrAluminiumSilverTest(KedrAluminiumSilverTest.java:27)
+  ui_Tests.catalogFactories.kedrCompany.straightFacade.KedrAluminiumSilver.continue1Click(KedrAluminiumSilver.java:64)
+  ui_Tests.test.kedrCompany.KedrAluminiumSilverTest.kedrAluminiumSilverTest(KedrAluminiumSilverTest.java:27)
   java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
   java.base/java.lang.reflect.Method.invoke(Method.java:578)
   org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

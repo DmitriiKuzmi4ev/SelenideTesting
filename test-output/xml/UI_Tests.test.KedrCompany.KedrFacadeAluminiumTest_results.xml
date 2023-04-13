@@ -6,7 +6,7 @@
            skipped="0"
            time="72,045">
   <properties />
-            <testcase name="kedrAluminiumColorTest" time="72,045" classname="UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest">
+            <testcase name="kedrAluminiumColorTest" time="72,045" classname="ui_Tests.test.kedrCompany.KedrFacadeAluminiumTest">
                 <failure type="com.codeborne.selenide.ex.UIAssertionError"
                   message="TimeoutException: timeout: Timed out receiving message from renderer: 30.000
 Page source: file:/C:/Users/d.kuzmichev/IdeaProjects/SelenideTestingNew/build/reports/tests/1681194893781.0.html
@@ -22,8 +22,8 @@ Caused by: TimeoutException: timeout: Timed out receiving message from renderer:
   com.codeborne.selenide.ex.UIAssertionError.wrap(UIAssertionError.java:102)
   com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:94)
   jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrAluminiumColor.goToBasketClick(KedrAluminiumColor.java:93)
-  UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest.kedrAluminiumColorTest(KedrFacadeAluminiumTest.java:33)
+  ui_Tests.catalogFactories.kedrCompany.straightFacade.KedrAluminiumColor.goToBasketClick(KedrAluminiumColor.java:93)
+  ui_Tests.test.kedrCompany.KedrFacadeAluminiumTest.kedrAluminiumColorTest(KedrFacadeAluminiumTest.java:33)
   java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
   java.base/java.lang.reflect.Method.invoke(Method.java:578)
   org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -73,8 +73,8 @@ Session ID: a9dc066456a2d2dfdf106a28f0ce13c9
   com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
   com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
   jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-  UI_Tests.CatalogFactories.KedrCompany.straightFacade.KedrAluminiumColor.goToBasketClick(KedrAluminiumColor.java:93)
-  UI_Tests.test.KedrCompany.KedrFacadeAluminiumTest.kedrAluminiumColorTest(KedrFacadeAluminiumTest.java:33)
+  ui_Tests.catalogFactories.kedrCompany.straightFacade.KedrAluminiumColor.goToBasketClick(KedrAluminiumColor.java:93)
+  ui_Tests.test.kedrCompany.KedrFacadeAluminiumTest.kedrAluminiumColorTest(KedrFacadeAluminiumTest.java:33)
   java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
   java.base/java.lang.reflect.Method.invoke(Method.java:578)
   org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

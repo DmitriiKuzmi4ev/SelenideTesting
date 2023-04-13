@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="fdmFeedBackFormTest" time="4,421" classname="UI_Tests.test.RegLogNavFormTests.FdmFeedBackFormTest" />
+            <testcase name="fdmFeedBackFormTest" time="4,421" classname="ui_Tests.test.regLogNavFormTests.FdmFeedBackFormTest" />
       
 </testsuite>

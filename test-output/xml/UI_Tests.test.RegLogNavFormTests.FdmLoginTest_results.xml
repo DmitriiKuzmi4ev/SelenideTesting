@@ -8,7 +8,7 @@
   <properties />
   
   
-            <testcase name="checkedBasket" time="3,514" classname="UI_Tests.test.RegLogNavFormTests.FdmLoginTest" />
-                <testcase name="logInTest" time="10,074" classname="UI_Tests.test.RegLogNavFormTests.FdmLoginTest" />
+            <testcase name="checkedBasket" time="3,514" classname="ui_Tests.test.regLogNavFormTests.FdmLoginTest" />
+                <testcase name="logInTest" time="10,074" classname="ui_Tests.test.regLogNavFormTests.FdmLoginTest" />
       
 </testsuite>
